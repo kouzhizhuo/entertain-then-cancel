@@ -11,7 +11,7 @@ Code, prompts and result files for an anonymous ACL Rolling Review submission.
 - `code/data_builders/`: scripts that download and build every item set.
 - `code/paper_tools/`: `json2tex.py` (result JSON → `\res` macros) and the table and figure generators.
 - `results/`: the small summary JSON files that every number in the paper comes from (`*/summary.json`, `DERIVED/`, `STATS/`, `M1/`, `MANIFEST/runs.json`, `PROMPTS/verbatim.json`).
-- `results/human_audit/`: blind audit labels, with annotator identity removed.
+- `results/human_audit/`: blind audit labels. Each is a consensus label from a panel of five or more annotators with PhD-level training in related fields, agreed through discussion and recorded with a software tool. No inter-annotator agreement is reported, and annotator identity is removed.
 - `data/`: new items created for this paper, plus build instructions for public sources.
 
 ## Install
