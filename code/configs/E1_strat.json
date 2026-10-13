@@ -1,0 +1,57 @@
+{
+  "name": "E1_strat",
+  "description": "STRAT (plan \u00a74.2): 8 natural-thinking samples per item on a 300-item GCI subset (test split); analysis stratifies by realised length within item.",
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "think_full"
+  ],
+  "sets": [
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_fel",
+      "variant": "felicity",
+      "n": 100,
+      "where": {
+        "split": [
+          "test"
+        ]
+      }
+    },
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "a2",
+      "n": 100,
+      "where": {
+        "split": [
+          "test"
+        ]
+      }
+    },
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "a3_fel",
+      "variant": "felicity",
+      "n": 100,
+      "where": {
+        "split": [
+          "test"
+        ]
+      }
+    }
+  ]
+}

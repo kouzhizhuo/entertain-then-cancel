@@ -1,0 +1,25 @@
+{
+ "name": "E1p_smoke",
+ "description": "Adapter smoke test: 20 felicity items, off vs think_full, seed 0.",
+ "item_seed": 1234,
+ "seeds": [
+  0
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [
+  "off",
+  "think_full"
+ ],
+ "sets": [
+  {
+   "file": "bn_underinformative",
+   "bucket": "a1_fel",
+   "variant": "felicity",
+   "n": 20
+  }
+ ]
+}

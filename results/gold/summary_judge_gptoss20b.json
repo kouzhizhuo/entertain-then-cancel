@@ -1,0 +1,37 @@
+{
+ "judge_file": "labels_judge_gptoss20b.jsonl",
+ "human_judge_V4": {
+  "kappa_w": 0.329,
+  "lo": 0.12,
+  "hi": 0.537,
+  "agree_w": 60.0,
+  "n": 50,
+  "passes_0.70": false
+ },
+ "judge_vs_A_pool": {
+  "kappa": 0.316,
+  "lo": 0.226,
+  "hi": 0.404,
+  "agree": 62.2,
+  "n": 294
+ },
+ "judge_vs_B3_pool": {
+  "kappa": 0.215,
+  "lo": 0.143,
+  "hi": 0.29,
+  "agree": 58.2,
+  "n": 294
+ },
+ "A_vs_B3_pool": {
+  "kappa": 0.133,
+  "lo": 0.085,
+  "hi": 0.191,
+  "agree": 46.3,
+  "n": 294
+ },
+ "judge_label_dist": {
+  "L": 139,
+  "P": 137,
+  "H": 18
+ }
+}

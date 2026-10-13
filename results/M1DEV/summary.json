@@ -1,0 +1,1328 @@
+{
+ "qwen3-8b": {
+  "v1": {
+   "nt": {
+    "speaker": {
+     "mean": 59.513
+    },
+    "literal": {
+     "mean": 73.498
+    },
+    "presup": {
+     "mean": 52.607
+    },
+    "score": {
+     "mean": 66.506
+    },
+    "tokfc": {
+     "mean": 5.371
+    },
+    "tokgsm": {
+     "mean": 316.053
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "nat": {
+    "speaker": {
+     "mean": 59.814
+    },
+    "literal": {
+     "mean": 86.934
+    },
+    "presup": {
+     "mean": 66.464
+    },
+    "score": {
+     "mean": 73.374
+    },
+    "tokfc": {
+     "mean": 786.863
+    },
+    "tokgsm": {
+     "mean": 2331.493
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "nat512": {
+    "speaker": {
+     "mean": 61.991
+    },
+    "literal": {
+     "mean": 83.799
+    },
+    "presup": {
+     "mean": 66.143
+    },
+    "score": {
+     "mean": 72.895
+    },
+    "tokfc": {
+     "mean": 451.071
+    },
+    "tokgsm": {
+     "mean": 831.32
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "intent": {
+    "speaker": {
+     "mean": 54.328
+    },
+    "literal": {
+     "mean": 82.625
+    },
+    "presup": {
+     "mean": 57.214
+    },
+    "score": {
+     "mean": 68.477
+    },
+    "tokfc": {
+     "mean": 392.571
+    },
+    "tokgsm": {
+     "mean": 1642.473
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "dual": {
+    "speaker": {
+     "mean": 51.786
+    },
+    "literal": {
+     "mean": 79.449
+    },
+    "presup": {
+     "mean": 52.821
+    },
+    "score": {
+     "mean": 65.617
+    },
+    "tokfc": {
+     "mean": 507.775
+    },
+    "tokgsm": {
+     "mean": 1617.553
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "route": {
+    "speaker": {
+     "mean": 54.853
+    },
+    "literal": {
+     "mean": 81.235
+    },
+    "presup": {
+     "mean": 55.071
+    },
+    "score": {
+     "mean": 68.044
+    },
+    "tokfc": {
+     "mean": 396.057
+    },
+    "tokgsm": {
+     "mean": 2068.327
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "taskcheck": {
+    "speaker": {
+     "mean": 51.812
+    },
+    "literal": {
+     "mean": 81.686
+    },
+    "presup": {
+     "mean": 54.286
+    },
+    "score": {
+     "mean": 66.749
+    },
+    "tokfc": {
+     "mean": 275.121
+    },
+    "tokgsm": {
+     "mean": 1370.4
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "grice": {
+    "speaker": {
+     "mean": 55.933
+    },
+    "literal": {
+     "mean": 82.52
+    },
+    "presup": {
+     "mean": 54.571
+    },
+    "score": {
+     "mean": 69.227
+    },
+    "tokfc": {
+     "mean": 660.212
+    },
+    "tokgsm": {
+     "mean": 2097.04
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "userroute": {
+    "speaker": {
+     "mean": 59.687
+    },
+    "literal": {
+     "mean": 86.872
+    },
+    "presup": {
+     "mean": 65.857
+    },
+    "score": {
+     "mean": 73.279
+    },
+    "tokfc": {
+     "mean": 877.553
+    },
+    "tokgsm": {
+     "mean": 1680.18
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "taskaware": {
+    "speaker": {
+     "mean": 62.389
+    },
+    "literal": {
+     "mean": 88.693
+    },
+    "presup": {
+     "mean": 64.786
+    },
+    "score": {
+     "mean": 75.541
+    },
+    "tokfc": {
+     "mean": 815.483
+    },
+    "tokgsm": {
+     "mean": 1588.167
+    },
+    "gates": {
+     "mean": 0
+    }
+   }
+  },
+  "v2": {
+   "nt": {
+    "speaker": {
+     "mean": 59.513
+    },
+    "literal": {
+     "mean": 73.498
+    },
+    "presup": {
+     "mean": 52.607
+    },
+    "score": {
+     "mean": 66.506
+    },
+    "tokfc": {
+     "mean": 5.371
+    },
+    "tokgsm": {
+     "mean": 316.107
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "nat": {
+    "speaker": {
+     "mean": 59.62
+    },
+    "literal": {
+     "mean": 86.834
+    },
+    "presup": {
+     "mean": 67.214
+    },
+    "score": {
+     "mean": 73.227
+    },
+    "tokfc": {
+     "mean": 784.924
+    },
+    "tokgsm": {
+     "mean": 2260.74
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "nat512": {
+    "speaker": {
+     "mean": 63.01
+    },
+    "literal": {
+     "mean": 83.866
+    },
+    "presup": {
+     "mean": 66.143
+    },
+    "score": {
+     "mean": 73.438
+    },
+    "tokfc": {
+     "mean": 450.983
+    },
+    "tokgsm": {
+     "mean": 829.16
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "taskaware": {
+    "speaker": {
+     "mean": 62.525
+    },
+    "literal": {
+     "mean": 89.117
+    },
+    "presup": {
+     "mean": 66.536
+    },
+    "score": {
+     "mean": 75.821
+    },
+    "tokfc": {
+     "mean": 811.39
+    },
+    "tokgsm": {
+     "mean": 1569.64
+    },
+    "gates": {
+     "mean": 0
+    },
+    "tr": {
+     "speaker": {
+      "w2r": {
+       "mean": 92
+      },
+      "r2w": {
+       "mean": 40
+      },
+      "n": {
+       "mean": 1856
+      }
+     },
+     "presup": {
+      "w2r": {
+       "mean": 31
+      },
+      "r2w": {
+       "mean": 38
+      },
+      "n": {
+       "mean": 550
+      }
+     },
+     "literal": {
+      "w2r": {
+       "mean": 58
+      },
+      "r2w": {
+       "mean": 19
+      },
+      "n": {
+       "mean": 1194
+      }
+     },
+     "circa": {
+      "w2r": {
+       "mean": 15
+      },
+      "r2w": {
+       "mean": 9
+      },
+      "n": {
+       "mean": 250
+      }
+     },
+     "ix-rec": {
+      "w2r": {
+       "mean": 20
+      },
+      "r2w": {
+       "mean": 4
+      },
+      "n": {
+       "mean": 136
+      }
+     },
+     "pub-task2": {
+      "w2r": {
+       "mean": 6
+      },
+      "r2w": {
+       "mean": 4
+      },
+      "n": {
+       "mean": 75
+      }
+     },
+     "nope": {
+      "w2r": {
+       "mean": 18
+      },
+      "r2w": {
+       "mean": 28
+      },
+      "n": {
+       "mean": 350
+      }
+     },
+     "imppres-presup": {
+      "w2r": {
+       "mean": 13
+      },
+      "r2w": {
+       "mean": 10
+      },
+      "n": {
+       "mean": 200
+      }
+     },
+     "imppres-conn-truth": {
+      "w2r": {
+       "mean": 0
+      },
+      "r2w": {
+       "mean": 1
+      },
+      "n": {
+       "mean": 358
+      }
+     },
+     "folio": {
+      "w2r": {
+       "mean": 6
+      },
+      "r2w": {
+       "mean": 8
+      },
+      "n": {
+       "mean": 200
+      }
+     },
+     "gsm8k": {
+      "w2r": {
+       "mean": 3
+      },
+      "r2w": {
+       "mean": 0
+      },
+      "n": {
+       "mean": 150
+      }
+     }
+    }
+   },
+   "sitcheck": {
+    "speaker": {
+     "mean": 49.283
+    },
+    "literal": {
+     "mean": 87.326
+    },
+    "presup": {
+     "mean": 60.893
+    },
+    "score": {
+     "mean": 68.304
+    },
+    "tokfc": {
+     "mean": 965.692
+    },
+    "tokgsm": {
+     "mean": 2420.433
+    },
+    "gates": {
+     "mean": 0
+    },
+    "tr": {
+     "speaker": {
+      "w2r": {
+       "mean": 27
+      },
+      "r2w": {
+       "mean": 163
+      },
+      "n": {
+       "mean": 1856
+      }
+     },
+     "presup": {
+      "w2r": {
+       "mean": 20
+      },
+      "r2w": {
+       "mean": 50
+      },
+      "n": {
+       "mean": 550
+      }
+     },
+     "literal": {
+      "w2r": {
+       "mean": 25
+      },
+      "r2w": {
+       "mean": 34
+      },
+      "n": {
+       "mean": 1194
+      }
+     },
+     "circa": {
+      "w2r": {
+       "mean": 10
+      },
+      "r2w": {
+       "mean": 41
+      },
+      "n": {
+       "mean": 250
+      }
+     },
+     "ix-rec": {
+      "w2r": {
+       "mean": 0
+      },
+      "r2w": {
+       "mean": 44
+      },
+      "n": {
+       "mean": 136
+      }
+     },
+     "pub-task2": {
+      "w2r": {
+       "mean": 1
+      },
+      "r2w": {
+       "mean": 15
+      },
+      "n": {
+       "mean": 75
+      }
+     },
+     "nope": {
+      "w2r": {
+       "mean": 14
+      },
+      "r2w": {
+       "mean": 25
+      },
+      "n": {
+       "mean": 350
+      }
+     },
+     "imppres-presup": {
+      "w2r": {
+       "mean": 6
+      },
+      "r2w": {
+       "mean": 25
+      },
+      "n": {
+       "mean": 200
+      }
+     },
+     "imppres-conn-truth": {
+      "w2r": {
+       "mean": 0
+      },
+      "r2w": {
+       "mean": 24
+      },
+      "n": {
+       "mean": 358
+      }
+     },
+     "folio": {
+      "w2r": {
+       "mean": 4
+      },
+      "r2w": {
+       "mean": 4
+      },
+      "n": {
+       "mean": 200
+      }
+     },
+     "gsm8k": {
+      "w2r": {
+       "mean": 1
+      },
+      "r2w": {
+       "mean": 0
+      },
+      "n": {
+       "mean": 150
+      }
+     }
+    }
+   },
+   "neutral": {
+    "speaker": {
+     "mean": 58.861
+    },
+    "literal": {
+     "mean": 86.604
+    },
+    "presup": {
+     "mean": 65.786
+    },
+    "score": {
+     "mean": 72.732
+    },
+    "tokfc": {
+     "mean": 920.773
+    },
+    "tokgsm": {
+     "mean": 2433.98
+    },
+    "gates": {
+     "mean": 0
+    },
+    "tr": {
+     "speaker": {
+      "w2r": {
+       "mean": 7
+      },
+      "r2w": {
+       "mean": 16
+      },
+      "n": {
+       "mean": 1856
+      }
+     },
+     "presup": {
+      "w2r": {
+       "mean": 2
+      },
+      "r2w": {
+       "mean": 9
+      },
+      "n": {
+       "mean": 550
+      }
+     },
+     "literal": {
+      "w2r": {
+       "mean": 4
+      },
+      "r2w": {
+       "mean": 6
+      },
+      "n": {
+       "mean": 1194
+      }
+     },
+     "circa": {
+      "w2r": {
+       "mean": 0
+      },
+      "r2w": {
+       "mean": 6
+      },
+      "n": {
+       "mean": 250
+      }
+     },
+     "ix-rec": {
+      "w2r": {
+       "mean": 2
+      },
+      "r2w": {
+       "mean": 6
+      },
+      "n": {
+       "mean": 136
+      }
+     },
+     "pub-task2": {
+      "w2r": {
+       "mean": 0
+      },
+      "r2w": {
+       "mean": 2
+      },
+      "n": {
+       "mean": 75
+      }
+     },
+     "nope": {
+      "w2r": {
+       "mean": 1
+      },
+      "r2w": {
+       "mean": 4
+      },
+      "n": {
+       "mean": 350
+      }
+     },
+     "imppres-presup": {
+      "w2r": {
+       "mean": 1
+      },
+      "r2w": {
+       "mean": 5
+      },
+      "n": {
+       "mean": 200
+      }
+     },
+     "imppres-conn-truth": {
+      "w2r": {
+       "mean": 0
+      },
+      "r2w": {
+       "mean": 2
+      },
+      "n": {
+       "mean": 358
+      }
+     },
+     "folio": {
+      "w2r": {
+       "mean": 1
+      },
+      "r2w": {
+       "mean": 2
+      },
+      "n": {
+       "mean": 200
+      }
+     },
+     "gsm8k": {
+      "w2r": {
+       "mean": 0
+      },
+      "r2w": {
+       "mean": 1
+      },
+      "n": {
+       "mean": 150
+      }
+     }
+    }
+   }
+  },
+  "v3": {
+   "nat": {
+    "speaker": {
+     "mean": 59.62
+    },
+    "literal": {
+     "mean": 86.834
+    },
+    "presup": {
+     "mean": 67.214
+    },
+    "score": {
+     "mean": 73.227
+    },
+    "tokfc": {
+     "mean": 784.924
+    },
+    "tokgsm": {
+     "mean": 2260.74
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "sit": {
+    "speaker": {
+     "mean": 60.403
+    },
+    "literal": {
+     "mean": 86.087
+    },
+    "presup": {
+     "mean": 65.464
+    },
+    "score": {
+     "mean": 73.245
+    },
+    "tokfc": {
+     "mean": 796.946
+    },
+    "tokgsm": {
+     "mean": 2211.88
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "control": {
+    "speaker": {
+     "mean": 60.439
+    },
+    "literal": {
+     "mean": 86.146
+    },
+    "presup": {
+     "mean": 64.5
+    },
+    "score": {
+     "mean": 73.293
+    },
+    "tokfc": {
+     "mean": 782.403
+    },
+    "tokgsm": {
+     "mean": 2273.46
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "nobal": {
+    "speaker": {
+     "mean": 60.567
+    },
+    "literal": {
+     "mean": 86.42
+    },
+    "presup": {
+     "mean": 65.25
+    },
+    "score": {
+     "mean": 73.493
+    },
+    "tokfc": {
+     "mean": 793.257
+    },
+    "tokgsm": {
+     "mean": 2322.073
+    },
+    "gates": {
+     "mean": 0
+    }
+   }
+  },
+  "d": {
+   "nat": {
+    "speaker": {
+     "mean": 59.62
+    },
+    "literal": {
+     "mean": 86.834
+    },
+    "presup": {
+     "mean": 67.214
+    },
+    "score": {
+     "mean": 73.227
+    },
+    "tokfc": {
+     "mean": 784.924
+    },
+    "tokgsm": {
+     "mean": 2260.74
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "sit": {
+    "speaker": {
+     "mean": 60.403
+    },
+    "literal": {
+     "mean": 86.087
+    },
+    "presup": {
+     "mean": 65.464
+    },
+    "score": {
+     "mean": 73.245
+    },
+    "tokfc": {
+     "mean": 796.946
+    },
+    "tokgsm": {
+     "mean": 2211.88
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "control": {
+    "speaker": {
+     "mean": 60.439
+    },
+    "literal": {
+     "mean": 86.146
+    },
+    "presup": {
+     "mean": 64.5
+    },
+    "score": {
+     "mean": 73.293
+    },
+    "tokfc": {
+     "mean": 782.403
+    },
+    "tokgsm": {
+     "mean": 2273.46
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "nobal": {
+    "speaker": {
+     "mean": 60.567
+    },
+    "literal": {
+     "mean": 86.42
+    },
+    "presup": {
+     "mean": 65.25
+    },
+    "score": {
+     "mean": 73.493
+    },
+    "tokfc": {
+     "mean": 793.257
+    },
+    "tokgsm": {
+     "mean": 2322.073
+    },
+    "gates": {
+     "mean": 0
+    }
+   }
+  },
+  "e": {
+   "nat": {
+    "speaker": {
+     "mean": 59.62
+    },
+    "literal": {
+     "mean": 86.834
+    },
+    "presup": {
+     "mean": 67.214
+    },
+    "score": {
+     "mean": 73.227
+    },
+    "tokfc": {
+     "mean": 784.924
+    },
+    "tokgsm": {
+     "mean": 2260.74
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "dpo": {
+    "speaker": {
+     "mean": 61.07
+    },
+    "literal": {
+     "mean": 86.674
+    },
+    "presup": {
+     "mean": 65.0
+    },
+    "score": {
+     "mean": 73.872
+    },
+    "tokfc": {
+     "mean": 859.348
+    },
+    "tokgsm": {
+     "mean": 2156.6
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "dposhuf": {
+    "speaker": {
+     "mean": 60.305
+    },
+    "literal": {
+     "mean": 86.668
+    },
+    "presup": {
+     "mean": 64.964
+    },
+    "score": {
+     "mean": 73.487
+    },
+    "tokfc": {
+     "mean": 797.784
+    },
+    "tokgsm": {
+     "mean": 2211.78
+    },
+    "gates": {
+     "mean": 0
+    }
+   }
+  },
+  "x": {
+   "routed": {
+    "mean": 283
+   },
+   "nat": {
+    "speaker": {
+     "mean": 59.702
+    },
+    "literal": {
+     "mean": 86.387
+    },
+    "presup": {
+     "mean": 67.607
+    },
+    "score": {
+     "mean": 73.045
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "x1": {
+    "speaker": {
+     "mean": 59.702
+    },
+    "literal": {
+     "mean": 86.387
+    },
+    "presup": {
+     "mean": 67.607
+    },
+    "score": {
+     "mean": 73.045
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "x1w0": {
+    "speaker": {
+     "mean": 59.702
+    },
+    "literal": {
+     "mean": 86.387
+    },
+    "presup": {
+     "mean": 67.607
+    },
+    "score": {
+     "mean": 73.045
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "x2": {
+    "speaker": {
+     "mean": 59.702
+    },
+    "literal": {
+     "mean": 86.387
+    },
+    "presup": {
+     "mean": 67.607
+    },
+    "score": {
+     "mean": 73.045
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "x2w0": {
+    "speaker": {
+     "mean": 59.702
+    },
+    "literal": {
+     "mean": 86.387
+    },
+    "presup": {
+     "mean": 67.607
+    },
+    "score": {
+     "mean": 73.045
+    },
+    "gates": {
+     "mean": 1
+    }
+   }
+  }
+ },
+ "r1-0528": {
+  "d": {
+   "nat": {
+    "speaker": {
+     "mean": 57.06
+    },
+    "literal": {
+     "mean": 84.883
+    },
+    "presup": {
+     "mean": 60.393
+    },
+    "score": {
+     "mean": 70.972
+    },
+    "tokfc": {
+     "mean": 1641.046
+    },
+    "tokgsm": {
+     "mean": 2109.127
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "sit": {
+    "speaker": {
+     "mean": 58.514
+    },
+    "literal": {
+     "mean": 84.793
+    },
+    "presup": {
+     "mean": 65.357
+    },
+    "score": {
+     "mean": 71.653
+    },
+    "tokfc": {
+     "mean": 1384.713
+    },
+    "tokgsm": {
+     "mean": 1581.527
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "control": {
+    "speaker": {
+     "mean": 57.589
+    },
+    "literal": {
+     "mean": 85.025
+    },
+    "presup": {
+     "mean": 64.714
+    },
+    "score": {
+     "mean": 71.307
+    },
+    "tokfc": {
+     "mean": 1400.04
+    },
+    "tokgsm": {
+     "mean": 1655.78
+    },
+    "gates": {
+     "mean": 0
+    }
+   }
+  },
+  "e": {
+   "nat": {
+    "speaker": {
+     "mean": 57.06
+    },
+    "literal": {
+     "mean": 84.883
+    },
+    "presup": {
+     "mean": 60.393
+    },
+    "score": {
+     "mean": 70.972
+    },
+    "tokfc": {
+     "mean": 1641.046
+    },
+    "tokgsm": {
+     "mean": 2109.127
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "dpo": {
+    "speaker": {
+     "mean": 59.06
+    },
+    "literal": {
+     "mean": 85.201
+    },
+    "presup": {
+     "mean": 64.786
+    },
+    "score": {
+     "mean": 72.13
+    },
+    "tokfc": {
+     "mean": 1687.814
+    },
+    "tokgsm": {
+     "mean": 2148.853
+    },
+    "gates": {
+     "mean": 0
+    }
+   },
+   "dposhuf": {
+    "speaker": {
+     "mean": 57.163
+    },
+    "literal": {
+     "mean": 84.836
+    },
+    "presup": {
+     "mean": 62.857
+    },
+    "score": {
+     "mean": 71.0
+    },
+    "tokfc": {
+     "mean": 1646.737
+    },
+    "tokgsm": {
+     "mean": 2162.107
+    },
+    "gates": {
+     "mean": 0
+    }
+   }
+  },
+  "x": {
+   "routed": {
+    "mean": 283
+   },
+   "nat": {
+    "speaker": {
+     "mean": 57.124
+    },
+    "literal": {
+     "mean": 84.998
+    },
+    "presup": {
+     "mean": 61.429
+    },
+    "score": {
+     "mean": 71.061
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "x1": {
+    "speaker": {
+     "mean": 57.124
+    },
+    "literal": {
+     "mean": 84.998
+    },
+    "presup": {
+     "mean": 61.429
+    },
+    "score": {
+     "mean": 71.061
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "x1w0": {
+    "speaker": {
+     "mean": 57.124
+    },
+    "literal": {
+     "mean": 84.998
+    },
+    "presup": {
+     "mean": 61.429
+    },
+    "score": {
+     "mean": 71.061
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "x2": {
+    "speaker": {
+     "mean": 57.124
+    },
+    "literal": {
+     "mean": 84.998
+    },
+    "presup": {
+     "mean": 61.429
+    },
+    "score": {
+     "mean": 71.061
+    },
+    "gates": {
+     "mean": 1
+    }
+   },
+   "x2w0": {
+    "speaker": {
+     "mean": 57.124
+    },
+    "literal": {
+     "mean": 84.998
+    },
+    "presup": {
+     "mean": 61.429
+    },
+    "score": {
+     "mean": 71.061
+    },
+    "gates": {
+     "mean": 1
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,211 @@
+{
+ "split": "dev",
+ "routed": {
+  "q3": {
+   "routed": {
+    "imppres_quant_fel": 111,
+    "imppres_quant_truth": 0,
+    "imppres_conn_fel": 121,
+    "imppres_conn_truth": 0,
+    "ludwig": 0,
+    "circa": 0,
+    "pub_task2": 0,
+    "pub_task3": 0,
+    "pub_task6": 0,
+    "figqa": 0,
+    "ix_rec": 0,
+    "ix_can": 0,
+    "nope": 0,
+    "imppres_presup": 0,
+    "folio": 0
+   },
+   "gsm_taskaware_available": true
+  },
+  "r1": {
+   "routed": {
+    "imppres_quant_fel": 111,
+    "imppres_quant_truth": 0,
+    "imppres_conn_fel": 121,
+    "imppres_conn_truth": 0,
+    "ludwig": 0,
+    "circa": 0,
+    "pub_task2": 0,
+    "pub_task3": 0,
+    "pub_task6": 0,
+    "figqa": 0,
+    "ix_rec": 0,
+    "ix_can": 0,
+    "nope": 0,
+    "imppres_presup": 0,
+    "folio": 0
+   },
+   "gsm_taskaware_available": false
+  }
+ },
+ "arms": {
+  "x1": {
+   "score_diff": 1.3879134521592624,
+   "ci": [
+    1.1835062516626762,
+    1.5981200673938103
+   ],
+   "gates": {
+    "ix_can": {
+     "diff": 0.0,
+     "lb": 0.0
+    },
+    "imppres_truth": {
+     "diff": 0.0,
+     "lb": 0.0
+    },
+    "folio": {
+     "diff": 0.0,
+     "lb": 0.0
+    },
+    "gsm8k": {
+     "diff": 0.0,
+     "lb": 0.0
+    }
+   },
+   "passes_test_rule": true,
+   "per_model": {
+    "q3": {
+     "speaker": 63.87608872253155,
+     "presup": 67.60714285714286,
+     "literal": 86.38739495798319
+    },
+    "r1": {
+     "speaker": 58.50210856665923,
+     "presup": 61.42857142857143,
+     "literal": 84.99763547877252
+    }
+   }
+  },
+  "x2": {
+   "score_diff": 0.8955395938636163,
+   "ci": [
+    0.7230602110490378,
+    1.061328367473619
+   ],
+   "gates": {
+    "ix_can": {
+     "diff": 0.0,
+     "lb": 0.0
+    },
+    "imppres_truth": {
+     "diff": 0.0,
+     "lb": 0.0
+    },
+    "folio": {
+     "diff": 0.0,
+     "lb": 0.0
+    },
+    "gsm8k": {
+     "diff": 0.0,
+     "lb": 0.0
+    }
+   },
+   "passes_test_rule": true,
+   "per_model": {
+    "q3": {
+     "speaker": 62.68392768679511,
+     "presup": 67.60714285714286,
+     "literal": 86.38739495798319
+    },
+    "r1": {
+     "speaker": 57.724774169213106,
+     "presup": 61.42857142857143,
+     "literal": 84.99763547877252
+    }
+   }
+  },
+  "taskaware": {
+   "score_diff": -29.48225325551592,
+   "ci": [
+    -30.404841952044894,
+    -28.565411974895348
+   ],
+   "gates": {
+    "ix_can": {
+     "diff": -43.01470588235294,
+     "lb": -48.161764705882355
+    },
+    "imppres_truth": {
+     "diff": -39.97175141242938,
+     "lb": -42.3728813559322
+    },
+    "folio": {
+     "diff": -37.0,
+     "lb": -41.25
+    },
+    "gsm8k": {
+     "diff": 1.0,
+     "lb": 0.0
+    }
+   },
+   "passes_test_rule": false,
+   "per_model": {
+    "q3": {
+     "speaker": 62.3891270971455,
+     "presup": 64.78571428571428,
+     "literal": 88.96010046476691
+    },
+    "r1": {
+     "speaker": 0.0,
+     "presup": 0.0,
+     "literal": 18.933333333333334
+    }
+   }
+  }
+ },
+ "nat_per_model": {
+  "q3": {
+   "speaker": 59.70210628039269,
+   "presup": 67.60714285714286,
+   "literal": 86.38739495798319
+  },
+  "r1": {
+   "speaker": 57.12443720016105,
+   "presup": 61.42857142857143,
+   "literal": 84.99763547877252
+  }
+ },
+ "felicity_per_model": {
+  "q3": {
+   "nat": {
+    "imppres_quant_fel": 1.4285714285714286,
+    "imppres_conn_fel": 0.27932960893854747
+   },
+   "x1": {
+    "imppres_quant_fel": 20.0,
+    "imppres_conn_fel": 19.273743016759777
+   },
+   "x2": {
+    "imppres_quant_fel": 14.857142857142858,
+    "imppres_conn_fel": 13.687150837988826
+   },
+   "taskaware": {
+    "imppres_quant_fel": 2.571428571428571,
+    "imppres_conn_fel": 2.2346368715083798
+   }
+  },
+  "r1": {
+   "nat": {
+    "imppres_quant_fel": 2.857142857142857,
+    "imppres_conn_fel": 1.1173184357541899
+   },
+   "x1": {
+    "imppres_quant_fel": 7.7142857142857135,
+    "imppres_conn_fel": 8.659217877094973
+   },
+   "x2": {
+    "imppres_quant_fel": 7.142857142857142,
+    "imppres_conn_fel": 2.2346368715083798
+   },
+   "taskaware": {
+    "imppres_quant_fel": 0.0,
+    "imppres_conn_fel": 0.0
+   }
+  }
+ }
+}

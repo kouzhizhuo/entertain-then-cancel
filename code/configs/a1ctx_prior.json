@@ -1,0 +1,26 @@
+{
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "off",
+    "think_b512",
+    "think_full"
+  ],
+  "name": "a1ctx_prior",
+  "description": "No-utterance prior probe on all 50 A1-ctx scenarios: 'Is it possible that all N ... ?' with the context minus the utterance. A 'No' answer => scenario excluded.",
+  "sets": [
+    {
+      "file": "a1ctx_prior",
+      "bucket": "a1ctx_prior"
+    }
+  ]
+}

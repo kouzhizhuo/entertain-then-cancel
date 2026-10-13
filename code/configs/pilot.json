@@ -1,0 +1,18 @@
+{
+  "name": "pilot",
+  "description": "Tonight's pilot: Qwen3-8B, thinking off vs on at budgets {0,512,2048,natural}, scalar implicature + indirect answers/speech + underinformative (Bott&Noveck-style), 3 seeds.",
+  "item_seed": 1234,
+  "sets": [
+    {"file": "imppres_scalar_target", "bucket": "scalar_imppres", "stratify": ["subset", "meta.spec_relation"], "per_cell": 5},
+    {"file": "bn_underinformative", "bucket": "scalar_underinformative"},
+    {"file": "ruis2022_test", "bucket": "indirect_answer_ruis", "n": 180},
+    {"file": "hu2022_indirect_speech", "bucket": "indirect_speech_hu"}
+  ],
+  "seeds": [0, 1, 2],
+  "conditions": ["off", "think_b0", "think_b512", "think_b2048", "think_full"],
+  "cap": 8192,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default"
+}

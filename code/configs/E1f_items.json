@@ -1,0 +1,92 @@
+{
+  "name": "E1f_items",
+  "description": "Frontier panel items (notes/FRONTIER_PANEL.md), test split, 1 sample: IMPPRES quantifiers 80 / connectives 80 / modals 40 (inference framing) + gradable adjectives 40 (lexical-scale contrast, added by the coder) + A2 60 + LUDWIG 40 = 340 items.",
+  "item_seed": 1234,
+  "seeds": [
+    0
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [],
+  "sets": [
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "f_a3q",
+      "variant": "felicity",
+      "where": {
+        "split": [
+          "test"
+        ],
+        "subset": [
+          "quantifiers"
+        ]
+      },
+      "n": 80
+    },
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "f_a3c",
+      "variant": "felicity",
+      "where": {
+        "split": [
+          "test"
+        ],
+        "subset": [
+          "connectives"
+        ]
+      },
+      "n": 80
+    },
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "f_a3m",
+      "variant": "felicity",
+      "where": {
+        "split": [
+          "test"
+        ],
+        "subset": [
+          "modals"
+        ]
+      },
+      "n": 40
+    },
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "f_a3l",
+      "variant": "felicity",
+      "where": {
+        "split": [
+          "test"
+        ],
+        "subset": [
+          "gradable_adjective"
+        ]
+      },
+      "n": 40
+    },
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "f_a2",
+      "where": {
+        "split": [
+          "test"
+        ]
+      },
+      "n": 60
+    },
+    {
+      "file": "ruis2022_test",
+      "bucket": "f_b2",
+      "where": {
+        "split": [
+          "test"
+        ]
+      },
+      "n": 40
+    }
+  ]
+}

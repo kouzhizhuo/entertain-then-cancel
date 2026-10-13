@@ -1,0 +1,45 @@
+{
+  "name": "E1_seeds2",
+  "description": "Extra seeds 3-5 on the headline GCI cells (same items as E1_main: a3_fel is the first rng consumer in both configs), for tighter std over seeds and CIs.",
+  "item_seed": 1234,
+  "seeds": [
+    3,
+    4,
+    5
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "off",
+    "off_soft",
+    "think_b0",
+    "think_b512",
+    "think_b1024_plain",
+    "think_b2048",
+    "think_full"
+  ],
+  "sets": [
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_fel",
+      "variant": "felicity"
+    },
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "a2"
+    },
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "a3_fel",
+      "variant": "felicity",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10
+    }
+  ]
+}

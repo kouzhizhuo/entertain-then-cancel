@@ -1,0 +1,6 @@
+{
+  "_note": "USD per 1M tokens. UNVERIFIED placeholders: fill from the provider's current price list before any run; run_openai.py refuses to run while a model's entry is null.",
+  "gpt-5": {"input": null, "output": null},
+  "gpt-5-mini": {"input": null, "output": null},
+  "gpt-5-nano": {"input": null, "output": null}
+}

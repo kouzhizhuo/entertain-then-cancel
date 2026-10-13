@@ -1,0 +1,87 @@
+#!/usr/bin/env python3
+"""Generate tables/tab_results.tex (compact main results table, Sec. 4.1) from build/results_full.tex.
+Cells are \\res macros (no typed numbers); formatting is derived from the values:
+bold = largest |delta| per column, underline = second largest, grey = 95% CI includes 0, '--' = not run."""
+import re, sys
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1]
+V = {k: v for k, v in re.findall(r'\\resdef\{([^}]*)\}\{([^}]*)\}', (ROOT / "build/results_full.tex").read_text())}
+def num(k):
+    try: return float(V[k].replace('$', '').replace('\\text{-}', '-').replace('−', '-'))
+    except (KeyError, ValueError): return None
+COLS = [("a3-quant", "inf", "dR"), ("a3-conn", "inf", "dR"), ("a3-modal", "inf", "dR"),
+        ("a2", "inf", "dR"), ("b2", "yn", "dacc"), ("quant", "3way", ""), ("conn", "3way", "")]
+import os
+SPLIT3 = os.environ.get("SPLIT3") == "1"   # fallback: move the 3-way columns into tab:threeway (only models with them)
+GROUPS = [
+  ("Qwen3 (thinking off $\\rightarrow$ natural thinking)", [
+    ("Qwen3-0.6B", "e1s", "qwen3-0p6b", "nat"), ("Qwen3-1.7B", "e1s", "qwen3-1p7b", "nat"), ("Qwen3-4B", "e1", "qwen3-4b", "nat"),
+    ("Qwen3-8B", "e1", "qwen3-8b", "nat"), ("Qwen3-14B", "e1", "qwen3-14b", "nat"), ("Qwen3-30B-A3B", "e1s", "qwen3-30b-a3b", "nat"),
+    ("Qwen3-32B", "e1s", "qwen3-32b", "nat")]),
+  ("Qwen3.5 and Qwen3.8 (thinking off $\\rightarrow$ natural thinking)", [
+    ("Qwen3.5-0.8B", "e1q", "qwen3p5-0p8b", "nat"), ("Qwen3.5-2B", "e1q", "qwen3p5-2b", "nat"), ("Qwen3.5-4B", "e1q", "qwen3p5-4b", "nat"),
+    ("Qwen3.5-9B", "e1q", "qwen3p5-9b", "nat"), ("Qwen3.5-35B-A3B", "e1q", "qwen3p5-35b-a3b", "nat"),
+    ("Qwen3.8-27B", "e1q", "qwen3p8-27b", "nat"), ("Qwen3.8-27B (low effort)", "e1q", "qwen3p8-27b-elow", "nat"), ("Qwen3.8-27B (medium effort)", "e1q", "qwen3p8-27b-emed", "nat")]),
+  ("Other open families", [
+    ("MiMo-7B-SFT", "e1b", "mimo-7b-sft", "nat"), ("MiMo-7B-RL", "e1b", "mimo-7b-rl", "nat"),
+    ("openPangu-Embedded-7B-V1.1$^\\S$", "e1pangu", "openpangu-embedded-7b-v1p1", "nat"), ("openPangu-Embedded-7B (v1.0)$^\\S$", "e1pangu", "openpangu-embedded-7b-model", "nat"),
+    ("gpt-oss-20b (high$-$low effort)", "e3", "gpt-oss-20b", "high")]),
+  ("DeepSeek (R1 distills always think: forced-empty block $\\rightarrow$ natural; V4: thinking off $\\rightarrow$ on)", [
+    ("DeepSeek-R1-0528-Qwen3-8B", "e1r1", "r1-0528-qwen3-8b", "nat"), ("R1-Distill-Qwen-7B", "e1s", "r1distill-7b", "nat"), ("R1-Distill-Qwen-14B", "e1s", "r1distill-14b", "nat"),
+    ("R1-Distill-Llama-8B", "e1p", "r1distill-llama-8b", "nat"), ("DeepSeek-V4-Pro$^\\P$", "e1f", "deepseek-v4-pro", "think"), ("DeepSeek-V4-Flash$^\\P$", "e1f", "deepseek-v4-flash", "think")]),
+  ("Closed models (highest$-$lowest dose)", [
+    ("GPT-5", "e1f", "gpt-5", "eff-high"), ("Claude Sonnet 4.6$^\\dagger$", "e1f", "claude-sonnet-4p6", "bud16k")]),
+]
+TW = {"qwen3-8b": "e1sf.qwen3-8b.{w}.nli.nat.dR", "qwen3-14b": "e1sf.qwen3-14b.{w}.nli.nat.dR", "qwen3-32b": "e1sf.qwen3-32b.{w}.nli.nat.dR",
+      "qwen3-1p7b": "e1sf.qwen3-1p7b.{w}.nli.nat.dR", "qwen3p5-9b": "e1sfx.qwen3p5-9b.{w}.nli.nat.dR", "qwen3p8-27b": "e1sfx.qwen3p8-27b.{w}.nli.nat.dR",
+      "openpangu-embedded-7b-v1p1": "e1pangu.openpangu-embedded-7b-v1p1.{w}.nli.nat.dR", "r1distill-llama-8b": "e1sfx.r1distill-llama-8b.{w}.nli.nat.dR",
+      "gpt-oss-20b": "e1gsf.gpt-oss-20b.{w}.nli.high.dR", "r1-0528-qwen3-8b": "e1r1.r1-0528-qwen3-8b.{w}.nli.nat.dR",
+      "gpt-5": "e1f.gpt-5.{v}.nli3.eff-high.dRx", "claude-sonnet-4p6": "e1f.claude-sonnet-4p6.{v}.nli3.bud16k.dRx"}
+def key(pre, m, col, cond):
+    s, f, met = col
+    if f == "3way":
+        t = TW.get(m)
+        if t: return t.format(w="a3f-" + s, v="a3-" + s)
+        for b in ("e1sf", "e1sfx", "e1pangu", "e1r1"):
+            k = f"{b}.{m}.a3f-{s}.nli.nat.dR"
+            if num(k + ".mean") is not None: return k
+        return f"none.{m}.{s}"
+    return f"{pre}.{m}.{s}.{f}.{cond}.{met}"
+rows = [(n, pre, m, c) for _, g in GROUPS for (n, pre, m, c) in g]
+rank = {}
+for j, col in enumerate(COLS):
+    vals = [(abs(num(key(pre, m, col, c) + ".mean")), i) for i, (n, pre, m, c) in enumerate(rows) if num(key(pre, m, col, c) + ".mean") is not None]
+    vals.sort(reverse=True)
+    for r, (_, i) in enumerate(vals[:2]): rank[(i, j)] = r
+def cell(i, j, pre, m, c):
+    k = key(pre, m, COLS[j], c)
+    if num(k + ".mean") is None: return "n/a"
+    lo, hi = num(k + ".lo"), num(k + ".hi")
+    threeway = COLS[j][1] == "3way"
+    body = f"\\res{{{k}.mean}}{{\\scriptsize\\,\\textcolor{{gray}}{{[\\res{{{k}.lo}}, \\res{{{k}.hi}}]}}}}" if (lo is not None and not threeway) else f"\\res{{{k}.mean}}"
+    sig = lo is not None and (hi < 0 or lo > 0)
+    if not sig and lo is not None and not threeway: body = body + "$^{\\circ}$"
+    r = rank.get((i, j))
+    if r == 0: body = f"\\textbf{{{body}}}"
+    elif r == 1: body = f"\\underline{{{body}}}"
+    return body
+out = [r"% GENERATED by tools/make_tab_results.py from build/results_full.tex -- do not edit by hand.",
+       r"\begin{table*}[t]", r"  \centering\small",
+r"  \caption{\textbf{Thinking reduces the pragmatic reading of logical words across families.} Change with thinking (pp) [95\% CI]; \textbf{bold}/\underline{underlined}: largest/second absolute change per column; $^{\\circ}$: CI includes 0.}",  r"  \label{tab:results}", r"  \setlength{\tabcolsep}{3.5pt}",
+       r"  \resizebox{\textwidth}{!}{%", r"  \begin{tabular}{@{}l ccc cc cc@{}}", r"    \toprule",
+       r"    & \multicolumn{3}{c}{\textsc{Logical words}} & \multicolumn{2}{c}{\textsc{Rest of the battery}} & \multicolumn{2}{c}{\textsc{Three-way choice}} \\",
+       r"    \cmidrule(lr){2-4}\cmidrule(lr){5-6}\cmidrule(l){7-8}",
+       r"    Model & \form{some} & \form{or} & modals & lexical scales & indirect ans. & \form{some} & \form{or} \\"]
+i = 0
+for gname, g in GROUPS:
+    out.append(r"    \midrule" if i == 0 else r"    \addlinespace[0.5mm]\midrule")
+    out.append(f"    \\multicolumn{{8}}{{@{{}}l}}{{\\textsc{{{gname}}}}} \\\\")
+    for (n, pre, m, c) in g:
+        cells = [cell(i, j, pre, m, c) for j in range(len(COLS))]
+        if "n/a" not in cells: out.append("    " + n + " & " + " & ".join(cells) + r" \\")
+        i += 1
+out += [r"    \bottomrule", r"  \end{tabular}}",
+ r"  \par\smallskip{\footnotesize Baseline: thinking off, or a forced-empty block where no switch exists; gpt-oss and closed models: highest minus lowest dose. $^\dagger$Reverses in the three-way choice. $^\S$Vendor system prompt; fast mode via ` /no\_think'. Three-way: no answer polarity, means only (\Cref{app:frontier}); Qwen3.5, Qwen3.8 and gpt-oss start near its floor. All models: \Cref{tab:main,tab:frontier}.\par}",
+ r"\end{table*}"]
+(ROOT / "tables/tab_results.tex").write_text("\n".join(out) + "\n")
+print("wrote tables/tab_results.tex", i, "rows")

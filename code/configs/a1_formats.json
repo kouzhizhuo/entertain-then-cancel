@@ -1,0 +1,47 @@
+{
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "off",
+    "off_soft",
+    "think_b0",
+    "think_b256_plain",
+    "think_b512",
+    "think_b1024_plain",
+    "think_b2048",
+    "think_full"
+  ],
+  "name": "a1_formats",
+  "description": "A1 (Bott-Noveck-style, 80 pairs x 7 sentence types) under four framings: truth (default), felicity (Yes/No good description), ternary (Katsos & Bishop), graded 1-7. Per-spec variant.",
+  "sets": [
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_tf",
+      "variant": "default"
+    },
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_fel",
+      "variant": "felicity"
+    },
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_ter",
+      "variant": "ternary"
+    },
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_gra",
+      "variant": "graded"
+    }
+  ]
+}

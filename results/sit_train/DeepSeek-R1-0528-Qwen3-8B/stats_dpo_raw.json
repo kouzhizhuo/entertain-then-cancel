@@ -1,0 +1,33 @@
+{
+ "model": "DeepSeek-R1-0528-Qwen3-8B",
+ "N_per_family": 199,
+ "cap": 1500,
+ "n_pairs": 597,
+ "mixed_items_per_family": {
+  "speaker": 547,
+  "literal": 205,
+  "presup": 495
+ },
+ "pair_pool_per_family": {
+  "speaker": 547,
+  "literal": 199,
+  "presup": 495
+ },
+ "sets": {
+  "folio": 47,
+  "gsm8k": 38,
+  "imppres_truth": 114,
+  "imppres_presup": 58,
+  "pub_task11": 41,
+  "pub_task12": 100,
+  "circa": 62,
+  "impl1k": 27,
+  "imppres_fel": 68,
+  "pub_task4": 24,
+  "pub_task5": 18
+ },
+ "mean_think_tokens_chosen": 2312.539363484087,
+ "mean_think_tokens_rejected": 2399.3400335008373,
+ "share_rejected_longer": 0.5041876046901173,
+ "shuffled_share_flipped": 0.5008375209380235
+}

@@ -1,0 +1,79 @@
+{
+ "name": "E1_probe",
+ "description": "Yes-bias discriminators for open models (lead): no-utterance prior probe (infprior; pragmatic = Yes) and polarity-flipped question (infflip; pragmatic = No) on the 160 IMPPRES quantifier/connective test items; off vs natural thinking, 3 seeds.",
+ "item_seed": 1234,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [
+  "off",
+  "think_full"
+ ],
+ "sets": [
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "p_a3q",
+   "variant": "felicity",
+   "where": {
+    "split": [
+     "test"
+    ],
+    "subset": [
+     "quantifiers"
+    ]
+   },
+   "n": 80,
+   "prior": true
+  },
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "p_a3c",
+   "variant": "felicity",
+   "where": {
+    "split": [
+     "test"
+    ],
+    "subset": [
+     "connectives"
+    ]
+   },
+   "n": 80,
+   "prior": true
+  },
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "x_a3q",
+   "variant": "felicityflip",
+   "where": {
+    "split": [
+     "test"
+    ],
+    "subset": [
+     "quantifiers"
+    ]
+   },
+   "n": 80
+  },
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "x_a3c",
+   "variant": "felicityflip",
+   "where": {
+    "split": [
+     "test"
+    ],
+    "subset": [
+     "connectives"
+    ]
+   },
+   "n": 80
+  }
+ ]
+}

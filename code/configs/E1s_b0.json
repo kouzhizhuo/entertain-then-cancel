@@ -1,0 +1,59 @@
+{
+  "name": "E1s_b0",
+  "description": "Ladder robustness (lead 2): off / off_soft / think_b0 on the ladder sets, for the ladder models that lacked b0.",
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "off",
+    "off_soft",
+    "think_b0"
+  ],
+  "sets": [
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_fel",
+      "variant": "felicity"
+    },
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_ter",
+      "variant": "ternary"
+    },
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "a2"
+    },
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "a3_fel",
+      "variant": "felicity",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10
+    },
+    {
+      "file": "hu2022_indirect_speech",
+      "bucket": "b1_indirect_speech"
+    },
+    {
+      "file": "hu2022_irony",
+      "bucket": "b1_irony"
+    },
+    {
+      "file": "ruis2022_test",
+      "bucket": "b2_ludwig",
+      "n": 200
+    }
+  ]
+}

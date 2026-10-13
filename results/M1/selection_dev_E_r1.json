@@ -1,0 +1,326 @@
+{
+ "model": "r1",
+ "attempt": 4,
+ "qualifies": false,
+ "passes_v1_gates": false,
+ "beats_nat_on_score": true,
+ "shuffled_control_is_never_fallback": true,
+ "table": {
+  "nat": {
+   "speaker": 57.060235728138345,
+   "literal": 84.88334976448681,
+   "presup": 60.392857142857146,
+   "score": 70.97179274631257,
+   "tokens_forced_choice": 1641.0457971014494,
+   "tokens_gsm": 2109.1266666666666,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true
+  },
+  "dpo": {
+   "speaker": 59.06013053398122,
+   "literal": 85.20059308639658,
+   "presup": 64.78571428571428,
+   "score": 72.1303618101889,
+   "tokens_forced_choice": 1687.8139130434784,
+   "tokens_gsm": 2148.8533333333335,
+   "gate_lb": {
+    "ix_can": [
+     -5.882352941176471,
+     -2.2058823529411766
+    ],
+    "imppres_truth": [
+     -0.847457627118644,
+     0.14124293785310735
+    ],
+    "folio": [
+     0.5,
+     3.5
+    ],
+    "gsm8k": [
+     -2.6666666666666665,
+     0.0
+    ]
+   },
+   "gates_pass": false
+  },
+  "dpo_shuffled": {
+   "speaker": 57.162947451125405,
+   "literal": 84.83613445378151,
+   "presup": 62.857142857142854,
+   "score": 70.99954095245346,
+   "tokens_forced_choice": 1646.7371014492753,
+   "tokens_gsm": 2162.1066666666666,
+   "gate_lb": {
+    "ix_can": [
+     -5.882352941176471,
+     -2.2058823529411766
+    ],
+    "imppres_truth": [
+     -0.2824858757062147,
+     0.5649717514124294
+    ],
+    "folio": [
+     -1.5,
+     1.5
+    ],
+    "gsm8k": [
+     -3.3333333333333335,
+     -0.6666666666666666
+    ]
+   },
+   "gates_pass": false
+  }
+ },
+ "transitions_wrong_to_right_right_to_wrong_n": {
+  "dpo": {
+   "imppres_quant_fel": [
+    9,
+    6,
+    350
+   ],
+   "imppres_quant_truth": [
+    8,
+    6,
+    350
+   ],
+   "imppres_conn_fel": [
+    5,
+    2,
+    358
+   ],
+   "imppres_conn_truth": [
+    1,
+    2,
+    358
+   ],
+   "ludwig": [
+    10,
+    10,
+    282
+   ],
+   "circa": [
+    23,
+    8,
+    250
+   ],
+   "pub_task2": [
+    7,
+    2,
+    75
+   ],
+   "pub_task3": [
+    7,
+    7,
+    75
+   ],
+   "pub_task6": [
+    4,
+    3,
+    75
+   ],
+   "figqa": [
+    7,
+    3,
+    255
+   ],
+   "ix_rec": [
+    9,
+    8,
+    136
+   ],
+   "ix_can": [
+    3,
+    6,
+    136
+   ],
+   "nope": [
+    19,
+    18,
+    350
+   ],
+   "imppres_presup": [
+    27,
+    10,
+    200
+   ],
+   "folio": [
+    11,
+    4,
+    200
+   ],
+   "gsm8k": [
+    3,
+    3,
+    150
+   ]
+  },
+  "dpo_shuffled": {
+   "imppres_quant_fel": [
+    6,
+    6,
+    350
+   ],
+   "imppres_quant_truth": [
+    7,
+    4,
+    350
+   ],
+   "imppres_conn_fel": [
+    5,
+    5,
+    358
+   ],
+   "imppres_conn_truth": [
+    1,
+    0,
+    358
+   ],
+   "ludwig": [
+    11,
+    14,
+    282
+   ],
+   "circa": [
+    16,
+    15,
+    250
+   ],
+   "pub_task2": [
+    6,
+    2,
+    75
+   ],
+   "pub_task3": [
+    5,
+    8,
+    75
+   ],
+   "pub_task6": [
+    3,
+    2,
+    75
+   ],
+   "figqa": [
+    5,
+    4,
+    255
+   ],
+   "ix_rec": [
+    6,
+    8,
+    136
+   ],
+   "ix_can": [
+    4,
+    7,
+    136
+   ],
+   "nope": [
+    17,
+    19,
+    350
+   ],
+   "imppres_presup": [
+    23,
+    12,
+    200
+   ],
+   "folio": [
+    8,
+    5,
+    200
+   ],
+   "gsm8k": [
+    3,
+    4,
+    150
+   ]
+  }
+ },
+ "gates": {
+  "nat": {
+   "ix_can": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 136
+   },
+   "imppres_truth": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 708
+   },
+   "folio": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 200
+   },
+   "gsm8k": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 150
+   }
+  },
+  "dpo": {
+   "ix_can": {
+    "diff": -2.2058823529411766,
+    "lb": -5.882352941176471,
+    "n": 136
+   },
+   "imppres_truth": {
+    "diff": 0.14124293785310735,
+    "lb": -0.847457627118644,
+    "n": 708
+   },
+   "folio": {
+    "diff": 3.5,
+    "lb": 0.5,
+    "n": 200
+   },
+   "gsm8k": {
+    "diff": 0.0,
+    "lb": -2.6666666666666665,
+    "n": 150
+   }
+  },
+  "dpo_shuffled": {
+   "ix_can": {
+    "diff": -2.2058823529411766,
+    "lb": -5.882352941176471,
+    "n": 136
+   },
+   "imppres_truth": {
+    "diff": 0.5649717514124294,
+    "lb": -0.2824858757062147,
+    "n": 708
+   },
+   "folio": {
+    "diff": 1.5,
+    "lb": -1.5,
+    "n": 200
+   },
+   "gsm8k": {
+    "diff": -0.6666666666666666,
+    "lb": -3.3333333333333335,
+    "n": 150
+   }
+  }
+ },
+ "gates_note": "diff = mean paired difference in pp vs this file's NAT reference; lb = one-sided 95% lower bound (5th percentile of a paired bootstrap, 4000 draws, as m1_select); n = dev items in the stratum; gate passes when lb > -2"
+}

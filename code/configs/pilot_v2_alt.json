@@ -1,0 +1,56 @@
+{
+  "name": "pilot_v2_alt",
+  "description": "Pilot v2: pilot.json + IMPPRES control bucket (log==prag labels: negation/opposite/no_impl); 'variant' selects the framing (default = formal NLI/true-false; alt = speaker framing).",
+  "item_seed": 1234,
+  "sets": [
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "scalar_imppres",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 5
+    },
+    {
+      "file": "bn_underinformative",
+      "bucket": "scalar_underinformative"
+    },
+    {
+      "file": "ruis2022_test",
+      "bucket": "indirect_answer_ruis",
+      "n": 180
+    },
+    {
+      "file": "hu2022_indirect_speech",
+      "bucket": "indirect_speech_hu"
+    },
+    {
+      "file": "imppres_scalar",
+      "bucket": "scalar_imppres_control",
+      "role_filter": "control",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 3
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "conditions": [
+    "off",
+    "think_b0",
+    "think_b512",
+    "think_b2048",
+    "think_full"
+  ],
+  "cap": 8192,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "alt"
+}

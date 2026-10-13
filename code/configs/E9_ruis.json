@@ -1,0 +1,47 @@
+{
+  "name": "E9_ruis",
+  "description": "E9 prior-work re-run: Ruis et al. k-shot (0/5/30 worked examples from their dev split) on the same 200 LUDWIG test items, under off / CAP-512 / NAT.",
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "off",
+    "think_b512",
+    "think_full"
+  ],
+  "sets": [
+    {
+      "file": "ruis2022_test",
+      "bucket": "b2_k0",
+      "n": 200
+    },
+    {
+      "file": "ruis2022_test",
+      "bucket": "b2_k5",
+      "n": 200,
+      "fewshot": {
+        "file": "ruis2022_dev",
+        "k": 5,
+        "seed": 0
+      }
+    },
+    {
+      "file": "ruis2022_test",
+      "bucket": "b2_k30",
+      "n": 200,
+      "fewshot": {
+        "file": "ruis2022_dev",
+        "k": 30,
+        "seed": 0
+      }
+    }
+  ]
+}

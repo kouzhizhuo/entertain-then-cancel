@@ -1,0 +1,28 @@
+{
+ "gpt6": {
+  "n-coding": 40,
+  "n-a1ctx": 20,
+  "kappa-a": {
+   "mean": 0.58,
+   "lo": 0.34,
+   "hi": 0.8,
+   "n": 40,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "kappa-b": {
+   "mean": 0.1,
+   "lo": -0.09,
+   "hi": 0.29,
+   "n": 40,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "a1ctx-acc": {
+   "mean": 100.0,
+   "n": 20
+  }
+ }
+}

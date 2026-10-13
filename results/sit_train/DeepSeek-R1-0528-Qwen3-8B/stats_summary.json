@@ -1,0 +1,75 @@
+{
+ "model": "DeepSeek-R1-0528-Qwen3-8B",
+ "D_selected_control": {
+  "quota_N_per_family": 1404,
+  "families": {
+   "speaker": {
+    "N": 1404,
+    "items": 2300,
+    "mixed": 547,
+    "all4": 1187,
+    "zero": 566,
+    "mixed_share_of_selected": 0.3896011396011396,
+    "share_4of4_of_selected": 0.6103988603988604
+   },
+   "literal": {
+    "N": 1404,
+    "items": 1779,
+    "mixed": 205,
+    "all4": 1379,
+    "zero": 195,
+    "mixed_share_of_selected": 0.146011396011396,
+    "share_4of4_of_selected": 0.853988603988604
+   },
+   "presup": {
+    "N": 1404,
+    "items": 1880,
+    "mixed": 495,
+    "all4": 909,
+    "zero": 476,
+    "mixed_share_of_selected": 0.35256410256410253,
+    "share_4of4_of_selected": 0.6474358974358975
+   }
+  },
+  "selected": {
+   "n": 4212,
+   "mean_think_tokens": 1683.2647198480531,
+   "share_correct": 1.0
+  },
+  "control": {
+   "n": 4212,
+   "mean_think_tokens": 1670.5712250712252,
+   "share_correct": 0.8637226970560304
+  }
+ },
+ "E_dpo_pairs": {
+  "N_per_family": 199,
+  "n_pairs": 597,
+  "families": {
+   "speaker": {
+    "N": 199,
+    "mixed_items": 547,
+    "pair_pool": 547,
+    "mixed_share": 1.0,
+    "share_4of4": 0.0
+   },
+   "literal": {
+    "N": 199,
+    "mixed_items": 205,
+    "pair_pool": 199,
+    "mixed_share": 1.0,
+    "share_4of4": 0.0
+   },
+   "presup": {
+    "N": 199,
+    "mixed_items": 495,
+    "pair_pool": 495,
+    "mixed_share": 1.0,
+    "share_4of4": 0.0
+   }
+  },
+  "mean_think_tokens_chosen": 2312.539363484087,
+  "mean_think_tokens_rejected": 2399.3400335008373,
+  "share_rejected_longer": 0.5041876046901173
+ }
+}

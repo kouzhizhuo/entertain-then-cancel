@@ -1,0 +1,55 @@
+{
+  "name": "E3_gptoss_s2",
+  "description": "E3 extra seeds 3-5 for gpt-oss (tighter effort-level CIs).",
+  "item_seed": 1234,
+  "seeds": [
+    3,
+    4,
+    5
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [],
+  "sets": [
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_fel",
+      "variant": "felicity"
+    },
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_ter",
+      "variant": "ternary"
+    },
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "a2"
+    },
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "a3_fel",
+      "variant": "felicity",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10
+    },
+    {
+      "file": "hu2022_indirect_speech",
+      "bucket": "b1_indirect_speech"
+    },
+    {
+      "file": "hu2022_irony",
+      "bucket": "b1_irony"
+    },
+    {
+      "file": "ruis2022_test",
+      "bucket": "b2_ludwig",
+      "n": 200
+    }
+  ]
+}

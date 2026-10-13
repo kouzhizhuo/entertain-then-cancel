@@ -1,0 +1,25 @@
+{
+ "model": "Qwen3-8B",
+ "n": 3954,
+ "family_counts": {
+  "speaker": 1512,
+  "literal": 1309,
+  "presup": 1133
+ },
+ "share_4of4": 0.7296408700050582,
+ "mean_think_tokens": 1052.3538189175517,
+ "total_tokens": 4161007,
+ "sets": {
+  "circa": 469,
+  "folio": 339,
+  "gsm8k": 552,
+  "impl1k": 381,
+  "imppres_fel": 236,
+  "imppres_presup": 327,
+  "imppres_truth": 418,
+  "pub_task11": 412,
+  "pub_task12": 394,
+  "pub_task4": 207,
+  "pub_task5": 219
+ }
+}

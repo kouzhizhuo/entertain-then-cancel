@@ -1,0 +1,121 @@
+{
+  "name": "E1_main",
+  "description": "E1 main (plan v1.2.x): thinking budget x phenomenon on fixed weights. All items of small sets run (analysis selects split=='test' for reported numbers); IMPPRES/presupposition stratified samples; T=0.6/0.95/20; 3 seeds; CAP-{64..2048} with stop phrase, CAP-plain-{256,1024}, NT-empty/soft/forced, NAT. Free-answer pass on 300 items.",
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "off",
+    "off_soft",
+    "think_b0",
+    "think_b64",
+    "think_b128",
+    "think_b256",
+    "think_b512",
+    "think_b1024",
+    "think_b2048",
+    "think_b256_plain",
+    "think_b1024_plain",
+    "think_full"
+  ],
+  "free_answer": {
+    "n_items": 300,
+    "conditions": [
+      "off",
+      "think_full"
+    ],
+    "answer_tokens": 512
+  },
+  "sets": [
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_fel",
+      "variant": "felicity"
+    },
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_tf",
+      "variant": "default"
+    },
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_ter",
+      "variant": "ternary"
+    },
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_gra",
+      "variant": "graded"
+    },
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "a2"
+    },
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "a3_fel",
+      "variant": "felicity",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10
+    },
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "a3_nli",
+      "variant": "default",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10
+    },
+    {
+      "file": "imppres_presupposition",
+      "bucket": "a4_all_n",
+      "variant": "default",
+      "stratify": [
+        "meta.trigger"
+      ],
+      "per_cell": 40
+    },
+    {
+      "file": "hu2022_indirect_speech",
+      "bucket": "b1_indirect_speech"
+    },
+    {
+      "file": "hu2022_irony",
+      "bucket": "b1_irony"
+    },
+    {
+      "file": "hu2022_metaphor",
+      "bucket": "b1_metaphor"
+    },
+    {
+      "file": "hu2022_humour",
+      "bucket": "b1_humour"
+    },
+    {
+      "file": "hu2022_deceit",
+      "bucket": "b1_deceit"
+    },
+    {
+      "file": "hu2022_maxims",
+      "bucket": "b1_maxims"
+    },
+    {
+      "file": "ruis2022_test",
+      "bucket": "b2_ludwig",
+      "n": 200
+    }
+  ]
+}

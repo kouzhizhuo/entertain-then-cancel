@@ -1,0 +1,50 @@
+{
+ "name": "E1_dsx_think",
+ "description": "Expansion datasets on always-thinking models: NT-forced, plain caps, natural (no off arm).",
+ "item_seed": 1234,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [
+  "think_b0_plain",
+  "think_b512_plain",
+  "think_b2048_plain",
+  "think_full"
+ ],
+ "sets": [
+  {
+   "file": "circa",
+   "bucket": "c_circa",
+   "where": {
+    "split": [
+     "test"
+    ]
+   }
+  },
+  {
+   "file": "implicatures1k",
+   "bucket": "c_impl",
+   "where": {
+    "split": [
+     "test"
+    ]
+   }
+  },
+  {
+   "file": "nope",
+   "bucket": "c_nope",
+   "where": {
+    "split": [
+     "test"
+    ]
+   }
+  }
+ ]
+}

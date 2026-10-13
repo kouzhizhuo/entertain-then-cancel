@@ -1,0 +1,187 @@
+{
+ "n_coding": 50,
+ "human_dist": {
+  "L": 22,
+  "P": 21,
+  "H": 7
+ },
+ "strata_A": {
+  "L": 16,
+  "P": 26,
+  "H": 8
+ },
+ "pool_N_by_A": {
+  "L": 178,
+  "H": 16,
+  "P": 100
+ },
+ "coding": {
+  "A": {
+   "kappa_w": {
+    "mean": 0.57,
+    "lo": 0.34,
+    "hi": 0.797,
+    "n": 50,
+    "mean__digits": 2,
+    "lo__digits": 2,
+    "hi__digits": 2
+   },
+   "agree_w": {
+    "mean": 77.4,
+    "lo": 63.2,
+    "hi": 89.6,
+    "n": 50,
+    "mean__digits": 1,
+    "lo__digits": 1,
+    "hi__digits": 1
+   },
+   "kappa_unweighted": {
+    "mean": 0.58,
+    "lo": 0.386,
+    "hi": 0.769,
+    "n": 50,
+    "mean__digits": 2,
+    "lo__digits": 2,
+    "hi__digits": 2
+   },
+   "kappa_binary_no_hedge": {
+    "mean": 0.59,
+    "lo": 0.341,
+    "hi": 0.834,
+    "n": 40,
+    "mean__digits": 2,
+    "lo__digits": 2,
+    "hi__digits": 2
+   },
+   "consistent_with_human_(lower_CI>=0.40)": false
+  },
+  "B": {
+   "kappa_w": {
+    "mean": 0.14,
+    "lo": 0.019,
+    "hi": 0.312,
+    "n": 50,
+    "mean__digits": 2,
+    "lo__digits": 2,
+    "hi__digits": 2
+   },
+   "agree_w": {
+    "mean": 45.1,
+    "lo": 31.1,
+    "hi": 60.4,
+    "n": 50,
+    "mean__digits": 1,
+    "lo__digits": 1,
+    "hi__digits": 1
+   },
+   "kappa_unweighted": {
+    "mean": 0.13,
+    "lo": 0.03,
+    "hi": 0.272,
+    "n": 50,
+    "mean__digits": 2,
+    "lo__digits": 2,
+    "hi__digits": 2
+   },
+   "kappa_binary_no_hedge": {
+    "mean": 0.18,
+    "lo": 0.041,
+    "hi": 0.369,
+    "n": 43,
+    "mean__digits": 2,
+    "lo__digits": 2,
+    "hi__digits": 2
+   },
+   "consistent_with_human_(lower_CI>=0.40)": false
+  },
+  "B3": {
+   "kappa_w": {
+    "mean": 0.03,
+    "lo": -0.059,
+    "hi": 0.145,
+    "n": 50,
+    "mean__digits": 2,
+    "lo__digits": 2,
+    "hi__digits": 2
+   },
+   "agree_w": {
+    "mean": 36.2,
+    "lo": 24.6,
+    "hi": 50.2,
+    "n": 50,
+    "mean__digits": 1,
+    "lo__digits": 1,
+    "hi__digits": 1
+   },
+   "kappa_unweighted": {
+    "mean": 0.03,
+    "lo": -0.076,
+    "hi": 0.149,
+    "n": 50,
+    "mean__digits": 2,
+    "lo__digits": 2,
+    "hi__digits": 2
+   },
+   "kappa_binary_no_hedge": {
+    "mean": 0.04,
+    "lo": -0.099,
+    "hi": 0.201,
+    "n": 43,
+    "mean__digits": 2,
+    "lo__digits": 2,
+    "hi__digits": 2
+   },
+   "consistent_with_human_(lower_CI>=0.40)": false
+  }
+ },
+ "per_class_accuracy_vs_A": {
+  "L": {
+   "acc": 81.2,
+   "lo": 62.5,
+   "hi": 100.0,
+   "n": 16
+  },
+  "P": {
+   "acc": 73.1,
+   "lo": 53.8,
+   "hi": 88.5,
+   "n": 26
+  },
+  "H": {
+   "acc": 62.5,
+   "lo": 25.0,
+   "hi": 100.0,
+   "n": 8
+  }
+ },
+ "a1ctx": {
+  "n": 24,
+  "acc_unclear_wrong": {
+   "mean": 100.0,
+   "wilson": [
+    86.2,
+    100.0
+   ]
+  },
+  "acc_unclear_excluded": {
+   "mean": 100.0,
+   "n": 24,
+   "wilson": [
+    86.2,
+    100.0
+   ]
+  },
+  "label_dist": {
+   "no, fine": 12,
+   "yes, misleading": 12
+  },
+  "gap_misleading_full_minus_partial": {
+   "mean": 100.0,
+   "lo": 100.0,
+   "hi": 100.0
+  },
+  "bar_pass (acc>=80 and Wilson lower>=70)": true
+ },
+ "judge_agreement": "not computed: no open-answer judge codes exist yet (F-open judge not run); do not fill",
+ "provenance": "user attestation relayed by the coordinator 2026-10-02: choices made by the user, typed by an agent (openpyxl); reported as human labels on that attestation"
+}

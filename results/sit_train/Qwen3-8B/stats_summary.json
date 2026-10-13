@@ -1,0 +1,85 @@
+{
+ "model": "Qwen3-8B",
+ "D_selected_control": {
+  "quota_N_per_family": 1318,
+  "families": {
+   "speaker": {
+    "N": 1318,
+    "items": 2300,
+    "mixed": 479,
+    "all4": 1289,
+    "zero": 532,
+    "mixed_share_of_selected": 0.3634294385432474,
+    "share_4of4_of_selected": 0.6365705614567526
+   },
+   "literal": {
+    "N": 1318,
+    "items": 1779,
+    "mixed": 197,
+    "all4": 1390,
+    "zero": 192,
+    "mixed_share_of_selected": 0.14946889226100146,
+    "share_4of4_of_selected": 0.8505311077389985
+   },
+   "presup": {
+    "N": 1318,
+    "items": 1880,
+    "mixed": 393,
+    "all4": 925,
+    "zero": 562,
+    "mixed_share_of_selected": 0.29817905918057663,
+    "share_4of4_of_selected": 0.7018209408194234
+   }
+  },
+  "selected": {
+   "n": 3954,
+   "mean_think_tokens": 1065.3796155791604,
+   "share_correct": 1.0
+  },
+  "control": {
+   "n": 3954,
+   "mean_think_tokens": 1049.1284774911483,
+   "share_correct": 0.8677288821446636
+  }
+ },
+ "E_dpo_pairs": {
+  "N_per_family": 188,
+  "n_pairs": 564,
+  "families": {
+   "speaker": {
+    "N": 188,
+    "mixed_items": 479,
+    "pair_pool": 479,
+    "mixed_share": 1.0,
+    "share_4of4": 0.0
+   },
+   "literal": {
+    "N": 188,
+    "mixed_items": 197,
+    "pair_pool": 188,
+    "mixed_share": 1.0,
+    "share_4of4": 0.0
+   },
+   "presup": {
+    "N": 188,
+    "mixed_items": 393,
+    "pair_pool": 393,
+    "mixed_share": 1.0,
+    "share_4of4": 0.0
+   }
+  },
+  "mean_think_tokens_chosen": 1597.8563829787233,
+  "mean_think_tokens_rejected": 1564.037234042553,
+  "share_rejected_longer": 0.4574468085106383
+ },
+ "D_nobal": {
+  "n": 3954,
+  "family_counts": {
+   "speaker": 1512,
+   "literal": 1309,
+   "presup": 1133
+  },
+  "share_4of4": 0.7296408700050582,
+  "mean_think_tokens": 1052.3538189175517
+ }
+}

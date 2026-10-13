@@ -1,0 +1,40 @@
+{
+ "name": "E7_full",
+ "description": "E7 trace-truncation probe on the FULL IMPPRES logical-operator target sets (quantifiers, connectives, modals; 1,800 items, felicity framing) to strengthen the trace finding (the original E7 had 26 some + 33 or items): letter probabilities after plain truncation of the same trace at k=0..2048 and at natural end; marker onset analysed from traces.jsonl.",
+ "item_seed": 1234,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [
+  "think_b0_plain",
+  "think_b32_plain",
+  "think_b64_plain",
+  "think_b128_plain",
+  "think_b256_plain",
+  "think_b512_plain",
+  "think_b1024_plain",
+  "think_b2048_plain",
+  "think_full"
+ ],
+ "sets": [
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "a3f_fel",
+   "variant": "felicity",
+   "where": {
+    "subset": [
+     "quantifiers",
+     "connectives",
+     "modals"
+    ]
+   }
+  }
+ ]
+}

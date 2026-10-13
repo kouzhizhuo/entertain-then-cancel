@@ -1,0 +1,17 @@
+{
+ "judge": {
+  "kappa-human-gptoss20b": {
+   "mean": 0.33,
+   "lo": 0.12,
+   "hi": 0.54,
+   "n": 50,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "agree-human-gptoss20b": {
+   "mean": 60.0,
+   "n": 50
+  }
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "name": "SIT_train_sample",
+ "description": "D-CONTINGENCY: K=4 natural-thinking samples (seeds 0-3, T=0.6, cap 8192) on the frozen SIT-train pool (splits/sit_train_families.json). NAT only; thought text kept in traces.jsonl. No DEV/TEST item.",
+ "item_seed": 1234,
+ "seeds": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [
+  "think_full"
+ ],
+ "sets": [
+  {
+   "file": "sit_train",
+   "bucket": "t_imppres_fel",
+   "where": {
+    "meta.set": [
+     "imppres_fel"
+    ]
+   }
+  },
+  {
+   "file": "sit_train",
+   "bucket": "t_imppres_truth",
+   "where": {
+    "meta.set": [
+     "imppres_truth"
+    ]
+   }
+  },
+  {
+   "file": "sit_train",
+   "bucket": "t_circa",
+   "where": {
+    "meta.set": [
+     "circa"
+    ]
+   }
+  },
+  {
+   "file": "sit_train",
+   "bucket": "t_pub_task4",
+   "where": {
+    "meta.set": [
+     "pub_task4"
+    ]
+   }
+  },
+  {
+   "file": "sit_train",
+   "bucket": "t_pub_task5",
+   "where": {
+    "meta.set": [
+     "pub_task5"
+    ]
+   }
+  },
+  {
+   "file": "sit_train",
+   "bucket": "t_pub_task11",
+   "where": {
+    "meta.set": [
+     "pub_task11"
+    ]
+   }
+  },
+  {
+   "file": "sit_train",
+   "bucket": "t_pub_task12",
+   "where": {
+    "meta.set": [
+     "pub_task12"
+    ]
+   }
+  },
+  {
+   "file": "sit_train",
+   "bucket": "t_impl1k",
+   "where": {
+    "meta.set": [
+     "impl1k"
+    ]
+   }
+  },
+  {
+   "file": "sit_train",
+   "bucket": "t_imppres_presup",
+   "where": {
+    "meta.set": [
+     "imppres_presup"
+    ]
+   }
+  },
+  {
+   "file": "sit_train",
+   "bucket": "t_folio",
+   "where": {
+    "meta.set": [
+     "folio"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "E3_check",
+  "description": "gpt-oss effort-control check: 50 dev items x low/medium/high; realised reasoning tokens must be monotone.",
+  "item_seed": 1234,
+  "seeds": [
+    0
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [],
+  "sets": [
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "a3_fel",
+      "variant": "felicity",
+      "where": {
+        "split": [
+          "dev"
+        ]
+      },
+      "n": 25
+    },
+    {
+      "file": "ruis2022_test",
+      "bucket": "b2_ludwig",
+      "where": {
+        "split": [
+          "dev"
+        ]
+      },
+      "n": 25
+    }
+  ]
+}

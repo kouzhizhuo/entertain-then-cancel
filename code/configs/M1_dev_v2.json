@@ -1,0 +1,158 @@
+{
+ "name": "M1_dev_v2",
+ "description": "SIT v2 DEV (METHOD_DESIGN AMENDMENT v2): NAT, NT, NAT-512, user-turn task-aware instruction, SIT-check (late_sitcheck), neutral check (late_neutral). NAT, SIT-check and neutral branch from the SAME saved stage-1 thought per item; extension cap 256 (--late_max 256). One decode per item.",
+ "item_seed": 1234,
+ "seeds": [
+  0
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [
+  "off",
+  "think_full",
+  "think_b512_plain",
+  "think_full+taskaware",
+  "late_sitcheck",
+  "late_neutral"
+ ],
+ "sets": [
+  {
+   "file": "method_dev",
+   "bucket": "m_imppres_quant_fel",
+   "where": {
+    "meta.set": [
+     "imppres_quant_fel"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_imppres_quant_truth",
+   "where": {
+    "meta.set": [
+     "imppres_quant_truth"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_imppres_conn_fel",
+   "where": {
+    "meta.set": [
+     "imppres_conn_fel"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_imppres_conn_truth",
+   "where": {
+    "meta.set": [
+     "imppres_conn_truth"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_ludwig",
+   "where": {
+    "meta.set": [
+     "ludwig"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_circa",
+   "where": {
+    "meta.set": [
+     "circa"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_pub_task2",
+   "where": {
+    "meta.set": [
+     "pub_task2"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_pub_task3",
+   "where": {
+    "meta.set": [
+     "pub_task3"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_pub_task6",
+   "where": {
+    "meta.set": [
+     "pub_task6"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_figqa",
+   "where": {
+    "meta.set": [
+     "figqa"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_ix_rec",
+   "where": {
+    "meta.set": [
+     "ix_rec"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_ix_can",
+   "where": {
+    "meta.set": [
+     "ix_can"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_nope",
+   "where": {
+    "meta.set": [
+     "nope"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_imppres_presup",
+   "where": {
+    "meta.set": [
+     "imppres_presup"
+    ]
+   }
+  },
+  {
+   "file": "method_dev",
+   "bucket": "m_folio",
+   "where": {
+    "meta.set": [
+     "folio"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "E6_prior",
+  "description": "E6 no-utterance prior probe: premise/utterance removed, question and options kept (IMPPRES felicity + NLI, A2). Items answerable without the utterance are flagged by the analysis.",
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "off",
+    "think_b512",
+    "think_full"
+  ],
+  "sets": [
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "a3_fel_prior",
+      "variant": "felicity",
+      "prior": true,
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10
+    },
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "a3_nli_prior",
+      "variant": "default",
+      "prior": true,
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10
+    },
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "a2_prior",
+      "prior": true
+    }
+  ]
+}

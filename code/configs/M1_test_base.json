@@ -1,0 +1,167 @@
+{
+ "name": "M1_test_base",
+ "description": "METHOD test matrix (fresh TEST items): NT, NAT, NAT-512, frozen SIT (seed_FROZEN is replaced by the dev-selected candidate before any test run), exact SIT text as user instruction, task-aware instruction, Grice prefix. [baseline arms only; the frozen SIT arm is run separately after selection]",
+ "item_seed": 1234,
+ "seeds": [
+  0
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [
+  "off",
+  "think_full",
+  "think_b512_plain",
+  "think_full+sitroute",
+  "think_full+taskaware",
+  "seed_grice"
+ ],
+ "sets": [
+  {
+   "file": "method_test",
+   "bucket": "m_imppres_quant_fel",
+   "where": {
+    "meta.set": [
+     "imppres_quant_fel"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_imppres_quant_truth",
+   "where": {
+    "meta.set": [
+     "imppres_quant_truth"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_imppres_conn_fel",
+   "where": {
+    "meta.set": [
+     "imppres_conn_fel"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_imppres_conn_truth",
+   "where": {
+    "meta.set": [
+     "imppres_conn_truth"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_ludwig",
+   "where": {
+    "meta.set": [
+     "ludwig"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_circa",
+   "where": {
+    "meta.set": [
+     "circa"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_pub_task2",
+   "where": {
+    "meta.set": [
+     "pub_task2"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_pub_task3",
+   "where": {
+    "meta.set": [
+     "pub_task3"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_pub_task6",
+   "where": {
+    "meta.set": [
+     "pub_task6"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_figqa",
+   "where": {
+    "meta.set": [
+     "figqa"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_ix_rec",
+   "where": {
+    "meta.set": [
+     "ix_rec"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_ix_can",
+   "where": {
+    "meta.set": [
+     "ix_can"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_nope",
+   "where": {
+    "meta.set": [
+     "nope"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_imppres_presup",
+   "where": {
+    "meta.set": [
+     "imppres_presup"
+    ]
+   }
+  },
+  {
+   "file": "method_test",
+   "bucket": "m_folio",
+   "where": {
+    "meta.set": [
+     "folio"
+    ]
+   }
+  },
+  {
+   "file": "method_ctxrev",
+   "bucket": "m_ctxrev",
+   "where": {
+    "meta.set": [
+     "ctxrev"
+    ]
+   }
+  }
+ ]
+}

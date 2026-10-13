@@ -1,0 +1,42 @@
+{
+  "name": "E9_hu_lp",
+  "description": "E9 Hu et al. protocol on B1: 4-shot P-lp letter readout on all six Hu phenomena (base and chat models).",
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [],
+  "sets": [
+    {
+      "file": "hu2022_indirect_speech",
+      "bucket": "b1_indirect_speech"
+    },
+    {
+      "file": "hu2022_irony",
+      "bucket": "b1_irony"
+    },
+    {
+      "file": "hu2022_metaphor",
+      "bucket": "b1_metaphor"
+    },
+    {
+      "file": "hu2022_humour",
+      "bucket": "b1_humour"
+    },
+    {
+      "file": "hu2022_deceit",
+      "bucket": "b1_deceit"
+    },
+    {
+      "file": "hu2022_maxims",
+      "bucket": "b1_maxims"
+    }
+  ]
+}

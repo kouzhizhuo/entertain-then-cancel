@@ -1,0 +1,51 @@
+{
+ "name": "E1_ds",
+ "description": "Expansion datasets (2026-10-04): Circa indirect answers (500 sampled, 3-way) and a 1,000-item conversational-implicature set (binary); test halves; same conditions as E1_extra. + NOPE presupposition NLI (eval+adversarial, test half).",
+ "item_seed": 1234,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [
+  "off",
+  "think_b0_plain",
+  "think_b512",
+  "think_b2048",
+  "think_full"
+ ],
+ "sets": [
+  {
+   "file": "circa",
+   "bucket": "c_circa",
+   "where": {
+    "split": [
+     "test"
+    ]
+   }
+  },
+  {
+   "file": "implicatures1k",
+   "bucket": "c_impl",
+   "where": {
+    "split": [
+     "test"
+    ]
+   }
+  },
+  {
+   "file": "nope",
+   "bucket": "c_nope",
+   "where": {
+    "split": [
+     "test"
+    ]
+   }
+  }
+ ]
+}

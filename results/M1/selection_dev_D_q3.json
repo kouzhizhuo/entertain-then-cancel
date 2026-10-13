@@ -1,0 +1,456 @@
+{
+ "model": "q3",
+ "qualifies": false,
+ "passes_v1_gates": false,
+ "beats_base_on_score": true,
+ "control_is_never_fallback": true,
+ "table": {
+  "base_NAT": {
+   "speaker": 59.62040693398746,
+   "literal": 86.83445378151261,
+   "presup": 67.21428571428572,
+   "score": 73.22743035775004,
+   "tokens_forced_choice": 784.924347826087,
+   "tokens_gsm": 2260.74,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true
+  },
+  "SIT-train_selected": {
+   "speaker": 60.4027027369977,
+   "literal": 86.0873949579832,
+   "presup": 65.46428571428571,
+   "score": 73.24504884749045,
+   "tokens_forced_choice": 796.9460869565218,
+   "tokens_gsm": 2211.88,
+   "gate_lb": {
+    "ix_can": [
+     -5.147058823529412,
+     -0.7352941176470589
+    ],
+    "imppres_truth": [
+     -0.847457627118644,
+     0.0
+    ],
+    "folio": [
+     -5.5,
+     -3.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": false
+  },
+  "control_unselected": {
+   "speaker": 60.43880076959137,
+   "literal": 86.14621848739496,
+   "presup": 64.5,
+   "score": 73.29250962849316,
+   "tokens_forced_choice": 782.4028985507247,
+   "tokens_gsm": 2273.46,
+   "gate_lb": {
+    "ix_can": [
+     -6.617647058823529,
+     -2.9411764705882355
+    ],
+    "imppres_truth": [
+     -0.9887005649717514,
+     0.0
+    ],
+    "folio": [
+     -5.0,
+     -2.5
+    ],
+    "gsm8k": [
+     0.6666666666666666,
+     2.0
+    ]
+   },
+   "gates_pass": false
+  },
+  "SIT-nobal_ablation": {
+   "speaker": 60.56708167953579,
+   "literal": 86.41976433031313,
+   "presup": 65.25,
+   "score": 73.49342300492447,
+   "tokens_forced_choice": 793.2568115942029,
+   "tokens_gsm": 2322.0733333333333,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     2.2058823529411766
+    ],
+    "imppres_truth": [
+     -1.1299435028248588,
+     -0.14124293785310735
+    ],
+    "folio": [
+     -7.0,
+     -4.0
+    ],
+    "gsm8k": [
+     -2.0,
+     0.0
+    ]
+   },
+   "gates_pass": false
+  }
+ },
+ "transitions_wrong_to_right_right_to_wrong_n": {
+  "selected": {
+   "imppres_quant_fel": [
+    7,
+    5,
+    350
+   ],
+   "imppres_quant_truth": [
+    8,
+    8,
+    350
+   ],
+   "imppres_conn_fel": [
+    2,
+    1,
+    358
+   ],
+   "imppres_conn_truth": [
+    0,
+    0,
+    358
+   ],
+   "ludwig": [
+    12,
+    11,
+    282
+   ],
+   "circa": [
+    8,
+    14,
+    250
+   ],
+   "pub_task2": [
+    4,
+    1,
+    75
+   ],
+   "pub_task3": [
+    3,
+    8,
+    75
+   ],
+   "pub_task6": [
+    2,
+    0,
+    75
+   ],
+   "figqa": [
+    10,
+    4,
+    255
+   ],
+   "ix_rec": [
+    15,
+    7,
+    136
+   ],
+   "ix_can": [
+    5,
+    6,
+    136
+   ],
+   "nope": [
+    11,
+    18,
+    350
+   ],
+   "imppres_presup": [
+    11,
+    14,
+    200
+   ],
+   "folio": [
+    1,
+    7,
+    200
+   ],
+   "gsm8k": [
+    0,
+    0,
+    150
+   ]
+  },
+  "control": {
+   "imppres_quant_fel": [
+    6,
+    5,
+    350
+   ],
+   "imppres_quant_truth": [
+    9,
+    9,
+    350
+   ],
+   "imppres_conn_fel": [
+    2,
+    1,
+    358
+   ],
+   "imppres_conn_truth": [
+    0,
+    0,
+    358
+   ],
+   "ludwig": [
+    13,
+    8,
+    282
+   ],
+   "circa": [
+    10,
+    14,
+    250
+   ],
+   "pub_task2": [
+    5,
+    2,
+    75
+   ],
+   "pub_task3": [
+    3,
+    5,
+    75
+   ],
+   "pub_task6": [
+    3,
+    3,
+    75
+   ],
+   "figqa": [
+    7,
+    1,
+    255
+   ],
+   "ix_rec": [
+    11,
+    7,
+    136
+   ],
+   "ix_can": [
+    2,
+    6,
+    136
+   ],
+   "nope": [
+    12,
+    24,
+    350
+   ],
+   "imppres_presup": [
+    10,
+    14,
+    200
+   ],
+   "folio": [
+    2,
+    7,
+    200
+   ],
+   "gsm8k": [
+    3,
+    0,
+    150
+   ]
+  },
+  "nobal": {
+   "imppres_quant_fel": [
+    6,
+    4,
+    350
+   ],
+   "imppres_quant_truth": [
+    9,
+    9,
+    350
+   ],
+   "imppres_conn_fel": [
+    1,
+    1,
+    358
+   ],
+   "imppres_conn_truth": [
+    0,
+    1,
+    358
+   ],
+   "ludwig": [
+    13,
+    5,
+    282
+   ],
+   "circa": [
+    13,
+    15,
+    250
+   ],
+   "pub_task2": [
+    4,
+    2,
+    75
+   ],
+   "pub_task3": [
+    4,
+    4,
+    75
+   ],
+   "pub_task6": [
+    3,
+    2,
+    75
+   ],
+   "figqa": [
+    9,
+    6,
+    255
+   ],
+   "ix_rec": [
+    12,
+    11,
+    136
+   ],
+   "ix_can": [
+    4,
+    1,
+    136
+   ],
+   "nope": [
+    9,
+    21,
+    350
+   ],
+   "imppres_presup": [
+    10,
+    11,
+    200
+   ],
+   "folio": [
+    2,
+    10,
+    200
+   ],
+   "gsm8k": [
+    2,
+    2,
+    150
+   ]
+  }
+ },
+ "gates": {
+  "base_NAT": {
+   "ix_can": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 136
+   },
+   "imppres_truth": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 708
+   },
+   "folio": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 200
+   },
+   "gsm8k": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 150
+   }
+  },
+  "SIT-train_selected": {
+   "ix_can": {
+    "diff": -0.7352941176470589,
+    "lb": -5.147058823529412,
+    "n": 136
+   },
+   "imppres_truth": {
+    "diff": 0.0,
+    "lb": -0.847457627118644,
+    "n": 708
+   },
+   "folio": {
+    "diff": -3.0,
+    "lb": -5.5,
+    "n": 200
+   },
+   "gsm8k": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 150
+   }
+  },
+  "control_unselected": {
+   "ix_can": {
+    "diff": -2.9411764705882355,
+    "lb": -6.617647058823529,
+    "n": 136
+   },
+   "imppres_truth": {
+    "diff": 0.0,
+    "lb": -0.9887005649717514,
+    "n": 708
+   },
+   "folio": {
+    "diff": -2.5,
+    "lb": -5.0,
+    "n": 200
+   },
+   "gsm8k": {
+    "diff": 2.0,
+    "lb": 0.6666666666666666,
+    "n": 150
+   }
+  },
+  "SIT-nobal_ablation": {
+   "ix_can": {
+    "diff": 2.2058823529411766,
+    "lb": 0.0,
+    "n": 136
+   },
+   "imppres_truth": {
+    "diff": -0.14124293785310735,
+    "lb": -1.1299435028248588,
+    "n": 708
+   },
+   "folio": {
+    "diff": -4.0,
+    "lb": -7.0,
+    "n": 200
+   },
+   "gsm8k": {
+    "diff": 0.0,
+    "lb": -2.0,
+    "n": 150
+   }
+  }
+ },
+ "gates_note": "diff = mean paired difference in pp vs this file's NAT reference; lb = one-sided 95% lower bound (5th percentile of a paired bootstrap, 4000 draws, as m1_select); n = dev items in the stratum; gate passes when lb > -2"
+}

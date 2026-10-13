@@ -1,0 +1,63 @@
+{
+ "open": {
+  "kappa-ab": {
+   "mean": 0.182,
+   "lo": 0.13,
+   "hi": 0.242,
+   "n": 294,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "kappa-ab-bin": {
+   "mean": 0.185,
+   "lo": 0.133,
+   "hi": 0.248,
+   "n": 294,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "agree": {
+   "mean": 50.0,
+   "n": 294
+  },
+  "confusion_A_rows_B_cols": {
+   "PP": 98,
+   "PL": 2,
+   "PH": 0,
+   "LP": 129,
+   "LL": 49,
+   "LH": 0,
+   "HP": 13,
+   "HL": 3,
+   "HH": 0
+  },
+  "kappa-ab-gci": {
+   "mean": 0.074,
+   "lo": 0.024,
+   "hi": 0.129,
+   "n": 200,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "agree-gci": {
+   "mean": 36.0,
+   "n": 200
+  },
+  "kappa-ab-pci": {
+   "mean": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 94,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "agree-pci": {
+   "mean": 79.8,
+   "n": 94
+  }
+ }
+}

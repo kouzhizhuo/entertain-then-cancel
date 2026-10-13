@@ -1,0 +1,961 @@
+{
+ "model": "q3",
+ "spec": "notes/DECISIONS.md P2 X1\u2032/X2\u2032 exploratory round 3 X3 router v2 (not pre-registered)",
+ "table": {
+  "nat": {
+   "speaker": 59.70210628039269,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 73.04475061918794,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {},
+   "beats_nat": false,
+   "passes_dev_gate": false
+  },
+  "<email>": {
+   "speaker": 59.70210628039269,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 73.04475061918794,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {},
+   "beats_nat": false,
+   "passes_dev_gate": false
+  },
+  "<email>": {
+   "speaker": 59.82838099884618,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 73.10788797841468,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {
+    "imppres_quant_fel": 3,
+    "imppres_conn_fel": 1
+   },
+   "beats_nat": true,
+   "passes_dev_gate": true
+  },
+  "<email>": {
+   "speaker": 63.43802895486286,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 74.91271195642302,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {
+    "imppres_quant_fel": 60,
+    "imppres_conn_fel": 61
+   },
+   "beats_nat": true,
+   "passes_dev_gate": true
+  },
+  "<email>": {
+   "speaker": 63.93887137749299,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 75.1631331677381,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {
+    "imppres_quant_fel": 66,
+    "imppres_conn_fel": 71
+   },
+   "beats_nat": true,
+   "passes_dev_gate": true
+  },
+  "<email>": {
+   "speaker": 59.70210628039269,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 73.04475061918794,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {},
+   "beats_nat": false,
+   "passes_dev_gate": false
+  },
+  "<email>": {
+   "speaker": 59.73385231213873,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 73.06062363506096,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {
+    "imppres_quant_fel": 1
+   },
+   "beats_nat": true,
+   "passes_dev_gate": true
+  },
+  "<email>": {
+   "speaker": 60.3969719361522,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 73.3921834470677,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {
+    "imppres_quant_fel": 17,
+    "imppres_conn_fel": 7
+   },
+   "beats_nat": true,
+   "passes_dev_gate": true
+  },
+  "<email>": {
+   "speaker": 62.84194843699462,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 74.6146716974889,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {
+    "imppres_quant_fel": 51,
+    "imppres_conn_fel": 51
+   },
+   "beats_nat": true,
+   "passes_dev_gate": true
+  }
+ },
+ "routed_items": {
+  "circa": [
+   0,
+   250
+  ],
+  "figqa": [
+   0,
+   255
+  ],
+  "folio": [
+   0,
+   200
+  ],
+  "imppres_conn_fel": [
+   121,
+   358
+  ],
+  "imppres_conn_truth": [
+   0,
+   358
+  ],
+  "imppres_presup": [
+   0,
+   200
+  ],
+  "imppres_quant_fel": [
+   111,
+   350
+  ],
+  "imppres_quant_truth": [
+   0,
+   350
+  ],
+  "ix_can": [
+   0,
+   136
+  ],
+  "ix_rec": [
+   0,
+   136
+  ],
+  "ludwig": [
+   0,
+   282
+  ],
+  "nope": [
+   0,
+   350
+  ],
+  "pub_task2": [
+   0,
+   75
+  ],
+  "pub_task3": [
+   0,
+   75
+  ],
+  "pub_task6": [
+   0,
+   75
+  ]
+ },
+ "routed_total": 232,
+ "transitions_wrong_to_right_right_to_wrong_n": {
+  "<email>": {
+   "imppres_quant_fel": [
+    0,
+    0,
+    350
+   ],
+   "imppres_quant_truth": [
+    0,
+    0,
+    350
+   ],
+   "imppres_conn_fel": [
+    0,
+    0,
+    358
+   ],
+   "imppres_conn_truth": [
+    0,
+    0,
+    358
+   ],
+   "ludwig": [
+    0,
+    0,
+    282
+   ],
+   "circa": [
+    0,
+    0,
+    250
+   ],
+   "pub_task2": [
+    0,
+    0,
+    75
+   ],
+   "pub_task3": [
+    0,
+    0,
+    75
+   ],
+   "pub_task6": [
+    0,
+    0,
+    75
+   ],
+   "figqa": [
+    0,
+    0,
+    255
+   ],
+   "ix_rec": [
+    0,
+    0,
+    136
+   ],
+   "ix_can": [
+    0,
+    0,
+    136
+   ],
+   "nope": [
+    0,
+    0,
+    350
+   ],
+   "imppres_presup": [
+    0,
+    0,
+    200
+   ],
+   "folio": [
+    0,
+    0,
+    200
+   ]
+  },
+  "<email>": {
+   "imppres_quant_fel": [
+    3,
+    0,
+    350
+   ],
+   "imppres_quant_truth": [
+    0,
+    0,
+    350
+   ],
+   "imppres_conn_fel": [
+    1,
+    0,
+    358
+   ],
+   "imppres_conn_truth": [
+    0,
+    0,
+    358
+   ],
+   "ludwig": [
+    0,
+    0,
+    282
+   ],
+   "circa": [
+    0,
+    0,
+    250
+   ],
+   "pub_task2": [
+    0,
+    0,
+    75
+   ],
+   "pub_task3": [
+    0,
+    0,
+    75
+   ],
+   "pub_task6": [
+    0,
+    0,
+    75
+   ],
+   "figqa": [
+    0,
+    0,
+    255
+   ],
+   "ix_rec": [
+    0,
+    0,
+    136
+   ],
+   "ix_can": [
+    0,
+    0,
+    136
+   ],
+   "nope": [
+    0,
+    0,
+    350
+   ],
+   "imppres_presup": [
+    0,
+    0,
+    200
+   ],
+   "folio": [
+    0,
+    0,
+    200
+   ]
+  },
+  "<email>": {
+   "imppres_quant_fel": [
+    60,
+    0,
+    350
+   ],
+   "imppres_quant_truth": [
+    0,
+    0,
+    350
+   ],
+   "imppres_conn_fel": [
+    60,
+    1,
+    358
+   ],
+   "imppres_conn_truth": [
+    0,
+    0,
+    358
+   ],
+   "ludwig": [
+    0,
+    0,
+    282
+   ],
+   "circa": [
+    0,
+    0,
+    250
+   ],
+   "pub_task2": [
+    0,
+    0,
+    75
+   ],
+   "pub_task3": [
+    0,
+    0,
+    75
+   ],
+   "pub_task6": [
+    0,
+    0,
+    75
+   ],
+   "figqa": [
+    0,
+    0,
+    255
+   ],
+   "ix_rec": [
+    0,
+    0,
+    136
+   ],
+   "ix_can": [
+    0,
+    0,
+    136
+   ],
+   "nope": [
+    0,
+    0,
+    350
+   ],
+   "imppres_presup": [
+    0,
+    0,
+    200
+   ],
+   "folio": [
+    0,
+    0,
+    200
+   ]
+  },
+  "<email>": {
+   "imppres_quant_fel": [
+    66,
+    0,
+    350
+   ],
+   "imppres_quant_truth": [
+    0,
+    0,
+    350
+   ],
+   "imppres_conn_fel": [
+    70,
+    1,
+    358
+   ],
+   "imppres_conn_truth": [
+    0,
+    0,
+    358
+   ],
+   "ludwig": [
+    0,
+    0,
+    282
+   ],
+   "circa": [
+    0,
+    0,
+    250
+   ],
+   "pub_task2": [
+    0,
+    0,
+    75
+   ],
+   "pub_task3": [
+    0,
+    0,
+    75
+   ],
+   "pub_task6": [
+    0,
+    0,
+    75
+   ],
+   "figqa": [
+    0,
+    0,
+    255
+   ],
+   "ix_rec": [
+    0,
+    0,
+    136
+   ],
+   "ix_can": [
+    0,
+    0,
+    136
+   ],
+   "nope": [
+    0,
+    0,
+    350
+   ],
+   "imppres_presup": [
+    0,
+    0,
+    200
+   ],
+   "folio": [
+    0,
+    0,
+    200
+   ]
+  },
+  "<email>": {
+   "imppres_quant_fel": [
+    0,
+    0,
+    350
+   ],
+   "imppres_quant_truth": [
+    0,
+    0,
+    350
+   ],
+   "imppres_conn_fel": [
+    0,
+    0,
+    358
+   ],
+   "imppres_conn_truth": [
+    0,
+    0,
+    358
+   ],
+   "ludwig": [
+    0,
+    0,
+    282
+   ],
+   "circa": [
+    0,
+    0,
+    250
+   ],
+   "pub_task2": [
+    0,
+    0,
+    75
+   ],
+   "pub_task3": [
+    0,
+    0,
+    75
+   ],
+   "pub_task6": [
+    0,
+    0,
+    75
+   ],
+   "figqa": [
+    0,
+    0,
+    255
+   ],
+   "ix_rec": [
+    0,
+    0,
+    136
+   ],
+   "ix_can": [
+    0,
+    0,
+    136
+   ],
+   "nope": [
+    0,
+    0,
+    350
+   ],
+   "imppres_presup": [
+    0,
+    0,
+    200
+   ],
+   "folio": [
+    0,
+    0,
+    200
+   ]
+  },
+  "<email>": {
+   "imppres_quant_fel": [
+    1,
+    0,
+    350
+   ],
+   "imppres_quant_truth": [
+    0,
+    0,
+    350
+   ],
+   "imppres_conn_fel": [
+    0,
+    0,
+    358
+   ],
+   "imppres_conn_truth": [
+    0,
+    0,
+    358
+   ],
+   "ludwig": [
+    0,
+    0,
+    282
+   ],
+   "circa": [
+    0,
+    0,
+    250
+   ],
+   "pub_task2": [
+    0,
+    0,
+    75
+   ],
+   "pub_task3": [
+    0,
+    0,
+    75
+   ],
+   "pub_task6": [
+    0,
+    0,
+    75
+   ],
+   "figqa": [
+    0,
+    0,
+    255
+   ],
+   "ix_rec": [
+    0,
+    0,
+    136
+   ],
+   "ix_can": [
+    0,
+    0,
+    136
+   ],
+   "nope": [
+    0,
+    0,
+    350
+   ],
+   "imppres_presup": [
+    0,
+    0,
+    200
+   ],
+   "folio": [
+    0,
+    0,
+    200
+   ]
+  },
+  "<email>": {
+   "imppres_quant_fel": [
+    17,
+    0,
+    350
+   ],
+   "imppres_quant_truth": [
+    0,
+    0,
+    350
+   ],
+   "imppres_conn_fel": [
+    6,
+    1,
+    358
+   ],
+   "imppres_conn_truth": [
+    0,
+    0,
+    358
+   ],
+   "ludwig": [
+    0,
+    0,
+    282
+   ],
+   "circa": [
+    0,
+    0,
+    250
+   ],
+   "pub_task2": [
+    0,
+    0,
+    75
+   ],
+   "pub_task3": [
+    0,
+    0,
+    75
+   ],
+   "pub_task6": [
+    0,
+    0,
+    75
+   ],
+   "figqa": [
+    0,
+    0,
+    255
+   ],
+   "ix_rec": [
+    0,
+    0,
+    136
+   ],
+   "ix_can": [
+    0,
+    0,
+    136
+   ],
+   "nope": [
+    0,
+    0,
+    350
+   ],
+   "imppres_presup": [
+    0,
+    0,
+    200
+   ],
+   "folio": [
+    0,
+    0,
+    200
+   ]
+  },
+  "<email>": {
+   "imppres_quant_fel": [
+    51,
+    0,
+    350
+   ],
+   "imppres_quant_truth": [
+    0,
+    0,
+    350
+   ],
+   "imppres_conn_fel": [
+    50,
+    1,
+    358
+   ],
+   "imppres_conn_truth": [
+    0,
+    0,
+    358
+   ],
+   "ludwig": [
+    0,
+    0,
+    282
+   ],
+   "circa": [
+    0,
+    0,
+    250
+   ],
+   "pub_task2": [
+    0,
+    0,
+    75
+   ],
+   "pub_task3": [
+    0,
+    0,
+    75
+   ],
+   "pub_task6": [
+    0,
+    0,
+    75
+   ],
+   "figqa": [
+    0,
+    0,
+    255
+   ],
+   "ix_rec": [
+    0,
+    0,
+    136
+   ],
+   "ix_can": [
+    0,
+    0,
+    136
+   ],
+   "nope": [
+    0,
+    0,
+    350
+   ],
+   "imppres_presup": [
+    0,
+    0,
+    200
+   ],
+   "folio": [
+    0,
+    0,
+    200
+   ]
+  }
+ },
+ "tokens_forced_choice": {
+  "nat": 786.2026086956522,
+  "x1_extra_readout_tokens_unused": 6.977391304347826,
+  "nt_readout": 5.371014492753623
+ }
+}

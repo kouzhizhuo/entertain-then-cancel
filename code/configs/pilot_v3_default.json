@@ -1,0 +1,77 @@
+{
+  "name": "pilot_v3_default",
+  "description": "Pilot v3 (plan v1.2.1): E1-style conditions incl. NT-soft and CAP-plain, T=0.6, free-answer (hedge) pass on 200 items. 'variant' = framing.",
+  "item_seed": 1234,
+  "sets": [
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "scalar_imppres",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 5
+    },
+    {
+      "file": "bn_underinformative",
+      "bucket": "scalar_underinformative"
+    },
+    {
+      "file": "ruis2022_test",
+      "bucket": "indirect_answer_ruis",
+      "n": 180
+    },
+    {
+      "file": "hu2022_indirect_speech",
+      "bucket": "indirect_speech_hu"
+    },
+    {
+      "file": "imppres_scalar",
+      "bucket": "scalar_imppres_control",
+      "role_filter": "control",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 3
+    },
+    {
+      "file": "imppres_scalar",
+      "bucket": "scalar_imppres_noimpl",
+      "where": {
+        "meta.spec_relation": [
+          "no_impl"
+        ]
+      },
+      "n": 60
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "conditions": [
+    "off",
+    "off_soft",
+    "think_b0",
+    "think_b256_plain",
+    "think_b512",
+    "think_b1024_plain",
+    "think_b2048",
+    "think_full"
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "free_answer": {
+    "n_items": 200,
+    "conditions": [
+      "off",
+      "think_full"
+    ],
+    "answer_tokens": 512
+  }
+}

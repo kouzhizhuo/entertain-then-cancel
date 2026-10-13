@@ -1,0 +1,47 @@
+{
+ "name": "E1f_prior",
+ "description": "E1f_prior: E1F yes-bias discriminator on the 160 IMPPRES quantifier/connective test items",
+ "item_seed": 1234,
+ "seeds": [
+  0,
+  1
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [],
+ "sets": [
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "f_a3q",
+   "variant": "felicity",
+   "where": {
+    "split": [
+     "test"
+    ],
+    "subset": [
+     "quantifiers"
+    ]
+   },
+   "n": 80,
+   "prior": true
+  },
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "f_a3c",
+   "variant": "felicity",
+   "where": {
+    "split": [
+     "test"
+    ],
+    "subset": [
+     "connectives"
+    ]
+   },
+   "n": 80,
+   "prior": true
+  }
+ ]
+}

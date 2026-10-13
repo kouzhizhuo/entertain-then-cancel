@@ -1,0 +1,216 @@
+{
+ "v4": {
+  "n-coding": 50,
+  "n-a1ctx": 24,
+  "kappa-human-a": {
+   "mean": 0.57,
+   "lo": 0.34,
+   "hi": 0.79,
+   "n": 50,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "acc-human-a": {
+   "mean": 77.4,
+   "lo": 63.4,
+   "hi": 89.5,
+   "n": 50,
+   "mean__digits": 1,
+   "lo__digits": 1,
+   "hi__digits": 1
+  },
+  "kappa-human-a-unw": {
+   "mean": 0.58,
+   "lo": 0.38,
+   "hi": 0.76,
+   "n": 50,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "kappa-human-a-bin": {
+   "mean": 0.59,
+   "lo": 0.33,
+   "hi": 0.8,
+   "n": 40,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "conf-a": {
+   "LL": 13,
+   "PL": 2,
+   "HL": 1,
+   "LP": 6,
+   "PP": 19,
+   "HP": 1,
+   "HH": 5,
+   "LH": 3
+  },
+  "kappa-human-b": {
+   "mean": 0.14,
+   "lo": 0.02,
+   "hi": 0.31,
+   "n": 50,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "acc-human-b": {
+   "mean": 45.1,
+   "lo": 31.1,
+   "hi": 60.4,
+   "n": 50,
+   "mean__digits": 1,
+   "lo__digits": 1,
+   "hi__digits": 1
+  },
+  "kappa-human-b-unw": {
+   "mean": 0.13,
+   "lo": 0.03,
+   "hi": 0.28,
+   "n": 50,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "kappa-human-b-bin": {
+   "mean": 0.18,
+   "lo": 0.04,
+   "hi": 0.37,
+   "n": 43,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "conf-b": {
+   "LP": 18,
+   "LL": 4,
+   "PP": 21,
+   "HP": 6,
+   "HL": 1
+  },
+  "kappa-human-b3": {
+   "mean": 0.03,
+   "lo": -0.06,
+   "hi": 0.15,
+   "n": 50,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "acc-human-b3": {
+   "mean": 36.2,
+   "lo": 24.6,
+   "hi": 50.2,
+   "n": 50,
+   "mean__digits": 1,
+   "lo__digits": 1,
+   "hi__digits": 1
+  },
+  "kappa-human-b3-unw": {
+   "mean": 0.03,
+   "lo": -0.08,
+   "hi": 0.15,
+   "n": 50,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "kappa-human-b3-bin": {
+   "mean": 0.04,
+   "lo": -0.09,
+   "hi": 0.21,
+   "n": 43,
+   "mean__digits": 2,
+   "lo__digits": 2,
+   "hi__digits": 2
+  },
+  "conf-b3": {
+   "LP": 20,
+   "LL": 2,
+   "PP": 20,
+   "HP": 6,
+   "PL": 1,
+   "HL": 1
+  },
+  "acc-class-prag": {
+   "mean": 73.1,
+   "lo": 53.8,
+   "hi": 88.5,
+   "n": 26,
+   "mean__digits": 1,
+   "lo__digits": 1,
+   "hi__digits": 1
+  },
+  "acc-class-lit": {
+   "mean": 81.2,
+   "lo": 62.5,
+   "hi": 100.0,
+   "n": 16,
+   "mean__digits": 1,
+   "lo__digits": 1,
+   "hi__digits": 1
+  },
+  "acc-class-hedge": {
+   "mean": 62.5,
+   "lo": 25.0,
+   "hi": 87.5,
+   "n": 8,
+   "mean__digits": 1,
+   "lo__digits": 1,
+   "hi__digits": 1
+  },
+  "human-dist-coding": {
+   "L": 22,
+   "P": 21,
+   "H": 7
+  },
+  "a1ctx-acc": {
+   "mean": 100.0,
+   "lo": 100.0,
+   "hi": 100.0,
+   "n": 24,
+   "mean__digits": 1,
+   "lo__digits": 1,
+   "hi__digits": 1,
+   "wilsonlo": 86.2
+  },
+  "a1ctx-acc-exunclear": {
+   "mean": 100.0,
+   "lo": 100.0,
+   "hi": 100.0,
+   "n": 24,
+   "mean__digits": 1,
+   "lo__digits": 1,
+   "hi__digits": 1,
+   "wilsonlo": 86.2
+  },
+  "a1ctx-gap": {
+   "mean": 100.0,
+   "lo": 100.0,
+   "hi": 100.0,
+   "n": 24,
+   "mean__digits": 1,
+   "lo__digits": 1,
+   "hi__digits": 1
+  },
+  "a1ctx-labels": {
+   "felicity_full": {
+    "yes, misleading": 12
+   },
+   "felicity_partial": {
+    "no, fine": 12
+   }
+  },
+  "judges": "not evaluable: no judge has coded the reference pool (no judge codes exist)",
+  "decisions": {
+   "a1ctx_valid": true,
+   "rater_a_consistent_with_human": false,
+   "rater_b_consistent_with_human": false,
+   "rater_b3_consistent_with_human": false,
+   "judge_accepted": false
+  }
+ }
+}

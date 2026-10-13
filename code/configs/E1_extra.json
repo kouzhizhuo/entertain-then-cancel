@@ -1,0 +1,82 @@
+{
+  "name": "E1_extra",
+  "description": "PCI battery completion: B3 Fig-QA (500 dev items) and B4 PUB tasks 2,3,4,6,11,14 (150 each; T2/T3 aligned items) under off / NT-forced / CAP-512 / CAP-2048 / NAT.",
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "off",
+    "think_b0_plain",
+    "think_b512",
+    "think_b2048",
+    "think_full"
+  ],
+  "sets": [
+    {
+      "file": "figqa",
+      "bucket": "b3_figqa"
+    },
+    {
+      "file": "pub6",
+      "bucket": "b4_t2",
+      "where": {
+        "meta.pub_task": [
+          2
+        ]
+      }
+    },
+    {
+      "file": "pub6",
+      "bucket": "b4_t3",
+      "where": {
+        "meta.pub_task": [
+          3
+        ]
+      }
+    },
+    {
+      "file": "pub6",
+      "bucket": "b4_t4",
+      "where": {
+        "meta.pub_task": [
+          4
+        ]
+      }
+    },
+    {
+      "file": "pub6",
+      "bucket": "b4_t6",
+      "where": {
+        "meta.pub_task": [
+          6
+        ]
+      }
+    },
+    {
+      "file": "pub6",
+      "bucket": "b4_t11",
+      "where": {
+        "meta.pub_task": [
+          11
+        ]
+      }
+    },
+    {
+      "file": "pub6",
+      "bucket": "b4_t14",
+      "where": {
+        "meta.pub_task": [
+          14
+        ]
+      }
+    }
+  ]
+}

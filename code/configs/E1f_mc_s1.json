@@ -1,0 +1,42 @@
+{
+ "name": "E1f_mc_s1",
+ "description": "E1F second-format check: 3-way NLI forced choice (default framing, letter readout) on the same a3-quant / a3-conn test items, lowest vs highest dose.",
+ "item_seed": 1234,
+ "seeds": [
+  1
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [],
+ "sets": [
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "f_a3q",
+   "where": {
+    "split": [
+     "test"
+    ],
+    "subset": [
+     "quantifiers"
+    ]
+   },
+   "n": 80
+  },
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "f_a3c",
+   "where": {
+    "split": [
+     "test"
+    ],
+    "subset": [
+     "connectives"
+    ]
+   },
+   "n": 80
+  }
+ ]
+}

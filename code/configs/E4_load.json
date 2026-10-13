@@ -1,0 +1,165 @@
+{
+  "name": "E4_load",
+  "description": "E4 context load x thinking (H4): filler prefix of ~512 / ~2048 tokens (fiction f / expository x) before A3 felicity, A2 and LUDWIG items, vs a no-load control in the same run; off / CAP-512 / NAT. (Digit-recall load arm not implemented.)",
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "off",
+    "think_b512",
+    "think_full"
+  ],
+  "sets": [
+    {
+      "file": "imppres_scalar_target",
+      "variant": "felicity",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10,
+      "bucket": "a3_fel_L0"
+    },
+    {
+      "file": "imppres_scalar_target",
+      "variant": "felicity",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10,
+      "bucket": "a3_fel_Lf512",
+      "load": {
+        "genre": "fiction",
+        "words": 380
+      }
+    },
+    {
+      "file": "imppres_scalar_target",
+      "variant": "felicity",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10,
+      "bucket": "a3_fel_Lf2048",
+      "load": {
+        "genre": "fiction",
+        "words": 1500
+      }
+    },
+    {
+      "file": "imppres_scalar_target",
+      "variant": "felicity",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10,
+      "bucket": "a3_fel_Lx512",
+      "load": {
+        "genre": "expository",
+        "words": 380
+      }
+    },
+    {
+      "file": "imppres_scalar_target",
+      "variant": "felicity",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10,
+      "bucket": "a3_fel_Lx2048",
+      "load": {
+        "genre": "expository",
+        "words": 1500
+      }
+    },
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "a2_L0"
+    },
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "a2_Lf512",
+      "load": {
+        "genre": "fiction",
+        "words": 380
+      }
+    },
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "a2_Lf2048",
+      "load": {
+        "genre": "fiction",
+        "words": 1500
+      }
+    },
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "a2_Lx512",
+      "load": {
+        "genre": "expository",
+        "words": 380
+      }
+    },
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "a2_Lx2048",
+      "load": {
+        "genre": "expository",
+        "words": 1500
+      }
+    },
+    {
+      "file": "ruis2022_test",
+      "n": 200,
+      "bucket": "b2_ludwig_L0"
+    },
+    {
+      "file": "ruis2022_test",
+      "n": 200,
+      "bucket": "b2_ludwig_Lf512",
+      "load": {
+        "genre": "fiction",
+        "words": 380
+      }
+    },
+    {
+      "file": "ruis2022_test",
+      "n": 200,
+      "bucket": "b2_ludwig_Lf2048",
+      "load": {
+        "genre": "fiction",
+        "words": 1500
+      }
+    },
+    {
+      "file": "ruis2022_test",
+      "n": 200,
+      "bucket": "b2_ludwig_Lx512",
+      "load": {
+        "genre": "expository",
+        "words": 380
+      }
+    },
+    {
+      "file": "ruis2022_test",
+      "n": 200,
+      "bucket": "b2_ludwig_Lx2048",
+      "load": {
+        "genre": "expository",
+        "words": 1500
+      }
+    }
+  ]
+}

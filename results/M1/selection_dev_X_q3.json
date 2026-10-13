@@ -1,0 +1,485 @@
+{
+ "model": "q3",
+ "spec": "notes/DECISIONS.md P2 EXPLORATORY (not pre-registered)",
+ "table": {
+  "nat": {
+   "speaker": 59.70210628039269,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 73.04475061918794,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {},
+   "beats_nat": false,
+   "passes_dev_gate": false
+  },
+  "x1": {
+   "speaker": 59.70210628039269,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 73.04475061918794,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {},
+   "beats_nat": false,
+   "passes_dev_gate": false
+  },
+  "x1_w0": {
+   "speaker": 59.70210628039269,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 73.04475061918794,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {},
+   "beats_nat": false,
+   "passes_dev_gate": false
+  },
+  "x2": {
+   "speaker": 59.70210628039269,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 73.04475061918794,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {},
+   "beats_nat": false,
+   "passes_dev_gate": false
+  },
+  "x2_w0": {
+   "speaker": 59.70210628039269,
+   "literal": 86.38739495798319,
+   "presup": 67.60714285714286,
+   "score": 73.04475061918794,
+   "gate_lb": {
+    "ix_can": [
+     0.0,
+     0.0
+    ],
+    "imppres_truth": [
+     0.0,
+     0.0
+    ],
+    "folio": [
+     0.0,
+     0.0
+    ],
+    "gsm8k": [
+     0.0,
+     0.0
+    ]
+   },
+   "gates_pass": true,
+   "changed_choices": {},
+   "beats_nat": false,
+   "passes_dev_gate": false
+  }
+ },
+ "routed_items": {
+  "circa": [
+   14,
+   250
+  ],
+  "figqa": [
+   0,
+   255
+  ],
+  "folio": [
+   0,
+   200
+  ],
+  "imppres_conn_fel": [
+   0,
+   358
+  ],
+  "imppres_conn_truth": [
+   2,
+   358
+  ],
+  "imppres_presup": [
+   0,
+   200
+  ],
+  "imppres_quant_fel": [
+   0,
+   350
+  ],
+  "imppres_quant_truth": [
+   0,
+   350
+  ],
+  "ix_can": [
+   0,
+   136
+  ],
+  "ix_rec": [
+   0,
+   136
+  ],
+  "ludwig": [
+   263,
+   282
+  ],
+  "nope": [
+   0,
+   350
+  ],
+  "pub_task2": [
+   0,
+   75
+  ],
+  "pub_task3": [
+   4,
+   75
+  ],
+  "pub_task6": [
+   0,
+   75
+  ]
+ },
+ "routed_total": 283,
+ "transitions_wrong_to_right_right_to_wrong_n": {
+  "x1": {
+   "imppres_quant_fel": [
+    0,
+    0,
+    350
+   ],
+   "imppres_quant_truth": [
+    0,
+    0,
+    350
+   ],
+   "imppres_conn_fel": [
+    0,
+    0,
+    358
+   ],
+   "imppres_conn_truth": [
+    0,
+    0,
+    358
+   ],
+   "ludwig": [
+    0,
+    0,
+    282
+   ],
+   "circa": [
+    0,
+    0,
+    250
+   ],
+   "pub_task2": [
+    0,
+    0,
+    75
+   ],
+   "pub_task3": [
+    0,
+    0,
+    75
+   ],
+   "pub_task6": [
+    0,
+    0,
+    75
+   ],
+   "figqa": [
+    0,
+    0,
+    255
+   ],
+   "ix_rec": [
+    0,
+    0,
+    136
+   ],
+   "ix_can": [
+    0,
+    0,
+    136
+   ],
+   "nope": [
+    0,
+    0,
+    350
+   ],
+   "imppres_presup": [
+    0,
+    0,
+    200
+   ],
+   "folio": [
+    0,
+    0,
+    200
+   ]
+  },
+  "x2": {
+   "imppres_quant_fel": [
+    0,
+    0,
+    350
+   ],
+   "imppres_quant_truth": [
+    0,
+    0,
+    350
+   ],
+   "imppres_conn_fel": [
+    0,
+    0,
+    358
+   ],
+   "imppres_conn_truth": [
+    0,
+    0,
+    358
+   ],
+   "ludwig": [
+    0,
+    0,
+    282
+   ],
+   "circa": [
+    0,
+    0,
+    250
+   ],
+   "pub_task2": [
+    0,
+    0,
+    75
+   ],
+   "pub_task3": [
+    0,
+    0,
+    75
+   ],
+   "pub_task6": [
+    0,
+    0,
+    75
+   ],
+   "figqa": [
+    0,
+    0,
+    255
+   ],
+   "ix_rec": [
+    0,
+    0,
+    136
+   ],
+   "ix_can": [
+    0,
+    0,
+    136
+   ],
+   "nope": [
+    0,
+    0,
+    350
+   ],
+   "imppres_presup": [
+    0,
+    0,
+    200
+   ],
+   "folio": [
+    0,
+    0,
+    200
+   ]
+  }
+ },
+ "tokens_forced_choice": {
+  "nat": 786.2026086956522,
+  "x1_extra_readout_tokens": 6.977391304347826,
+  "nt_readout": 5.371014492753623
+ },
+ "x1_w0_equals_nat": true,
+ "x2_w0_equals_nat": true,
+ "gates": {
+  "nat": {
+   "ix_can": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 136
+   },
+   "imppres_truth": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 708
+   },
+   "folio": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 200
+   },
+   "gsm8k": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 150
+   }
+  },
+  "x1": {
+   "ix_can": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 136
+   },
+   "imppres_truth": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 708
+   },
+   "folio": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 200
+   },
+   "gsm8k": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 150
+   }
+  },
+  "x1_w0": {
+   "ix_can": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 136
+   },
+   "imppres_truth": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 708
+   },
+   "folio": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 200
+   },
+   "gsm8k": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 150
+   }
+  },
+  "x2": {
+   "ix_can": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 136
+   },
+   "imppres_truth": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 708
+   },
+   "folio": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 200
+   },
+   "gsm8k": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 150
+   }
+  },
+  "x2_w0": {
+   "ix_can": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 136
+   },
+   "imppres_truth": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 708
+   },
+   "folio": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 200
+   },
+   "gsm8k": {
+    "diff": 0.0,
+    "lb": 0.0,
+    "n": 150
+   }
+  }
+ },
+ "gates_note": "diff = mean paired difference in pp vs this file's NAT reference; lb = one-sided 95% lower bound (5th percentile of a paired bootstrap, 4000 draws, as m1_select); n = dev items in the stratum; gate passes when lb > -2"
+}

@@ -1,0 +1,55 @@
+{
+  "name": "E2_think",
+  "description": "E2 estimand (ii) for OLMo-3-Think branches: NT-forced (think_b0_plain) vs plain caps vs NAT on the core sets.",
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "think_b0_plain",
+    "think_b512_plain",
+    "think_b2048_plain",
+    "think_full"
+  ],
+  "sets": [
+    {
+      "file": "bn_underinformative",
+      "bucket": "a1_fel",
+      "variant": "felicity"
+    },
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "a2"
+    },
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "a3_fel",
+      "variant": "felicity",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10
+    },
+    {
+      "file": "hu2022_indirect_speech",
+      "bucket": "b1_indirect_speech"
+    },
+    {
+      "file": "hu2022_irony",
+      "bucket": "b1_irony"
+    },
+    {
+      "file": "ruis2022_test",
+      "bucket": "b2_ludwig",
+      "n": 200
+    }
+  ]
+}

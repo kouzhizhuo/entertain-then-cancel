@@ -1,0 +1,51 @@
+{
+  "name": "A6_ix",
+  "description": "A6 ImplicatureX (all four types): recognition, cancellation and no-utterance prior truth judgements under off / NT-forced / CAP-512 / CAP-2048 / NAT (replication point vs the published 512-cap drop).",
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "off",
+    "think_b0_plain",
+    "think_b512",
+    "think_b2048",
+    "think_full"
+  ],
+  "sets": [
+    {
+      "file": "implicaturex",
+      "bucket": "ix_rec",
+      "where": {
+        "meta.kind": [
+          "rec"
+        ]
+      }
+    },
+    {
+      "file": "implicaturex",
+      "bucket": "ix_can",
+      "where": {
+        "meta.kind": [
+          "can"
+        ]
+      }
+    },
+    {
+      "file": "implicaturex",
+      "bucket": "ix_prior",
+      "where": {
+        "meta.kind": [
+          "prior"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+ "model": "Qwen3-8B",
+ "N_per_family": 188,
+ "cap": 1500,
+ "n_pairs": 564,
+ "mixed_items_per_family": {
+  "speaker": 479,
+  "literal": 197,
+  "presup": 393
+ },
+ "pair_pool_per_family": {
+  "speaker": 479,
+  "literal": 188,
+  "presup": 393
+ },
+ "sets": {
+  "folio": 42,
+  "gsm8k": 20,
+  "imppres_truth": 126,
+  "imppres_presup": 41,
+  "pub_task11": 52,
+  "pub_task12": 95,
+  "circa": 55,
+  "impl1k": 21,
+  "imppres_fel": 80,
+  "pub_task4": 21,
+  "pub_task5": 11
+ },
+ "mean_think_tokens_chosen": 1597.8563829787233,
+ "mean_think_tokens_rejected": 1564.037234042553,
+ "share_rejected_longer": 0.4574468085106383,
+ "shuffled_share_flipped": 0.5
+}

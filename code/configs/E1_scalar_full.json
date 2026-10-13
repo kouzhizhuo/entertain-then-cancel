@@ -1,0 +1,48 @@
+{
+  "name": "E1_scalar_full",
+  "description": "METHOD_CHECK fix 2: the FULL IMPPRES target sets of the three logical-operator triggers (quantifiers, connectives, modals: 1,800 items) in both framings, off / NT-forced / CAP-512 / CAP-2048 / NAT.",
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "off",
+    "think_b0_plain",
+    "think_b512",
+    "think_b2048",
+    "think_full"
+  ],
+  "sets": [
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "a3f_fel",
+      "variant": "felicity",
+      "where": {
+        "subset": [
+          "quantifiers",
+          "connectives",
+          "modals"
+        ]
+      }
+    },
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "a3f_nli",
+      "variant": "default",
+      "where": {
+        "subset": [
+          "quantifiers",
+          "connectives",
+          "modals"
+        ]
+      }
+    }
+  ]
+}

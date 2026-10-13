@@ -1,0 +1,361 @@
+{
+ "drop_models": [
+  "qwen3-14b",
+  "qwen3-30b-a3b",
+  "qwen3-32b",
+  "qwen3-4b",
+  "qwen3-8b",
+  "r1distill-llama-8b",
+  "exaone-deep-7p8b",
+  "llama-nemotron-nano-8b",
+  "phi4-mini-reasoning",
+  "phi4-reasoning",
+  "qwen3p5-0p8b",
+  "qwen3p5-2b",
+  "qwen3p5-4b",
+  "qwen3p5-9b",
+  "qwen3p8-27b",
+  "acereason-7b",
+  "granite-3p3-8b",
+  "mimo-7b-rl",
+  "mimo-7b-sft",
+  "skywork-or1-7b",
+  "openpangu-embedded-7b-v1p1"
+ ],
+ "rise_models": [
+  "qwen3p5-0p8b",
+  "smollm3-3b"
+ ],
+ "main_tested": [
+  "acereason-7b",
+  "exaone-deep-7p8b",
+  "gpt-oss-120b",
+  "gpt-oss-20b",
+  "granite-3p3-8b",
+  "llama-nemotron-nano-8b",
+  "llama-nemotron-super-49b",
+  "magistral-small",
+  "mimo-7b-rl",
+  "mimo-7b-sft",
+  "nemotron-nano-9b-v2",
+  "olmo3-32b-think",
+  "olmo3-7b-think",
+  "openpangu-embedded-7b-model",
+  "openpangu-embedded-7b-v1p1",
+  "phi4-mini-reasoning",
+  "phi4-reasoning",
+  "phi4-reasoning-plus",
+  "qwen3-0p6b",
+  "qwen3-14b",
+  "qwen3-1p7b",
+  "qwen3-30b-a3b",
+  "qwen3-32b",
+  "qwen3-4b",
+  "qwen3-4b-thinking-2507",
+  "qwen3-8b",
+  "qwen3p5-0p8b",
+  "qwen3p5-2b",
+  "qwen3p5-35b-a3b",
+  "qwen3p5-4b",
+  "qwen3p5-9b",
+  "qwen3p8-27b",
+  "qwq-32b",
+  "r1-0528-qwen3-8b",
+  "r1distill-14b",
+  "r1distill-7b",
+  "r1distill-llama-70b",
+  "r1distill-llama-8b",
+  "skywork-or1-7b",
+  "smollm3-3b"
+ ],
+ "main_counted": [
+  "acereason-7b",
+  "exaone-deep-7p8b",
+  "gpt-oss-120b",
+  "gpt-oss-20b",
+  "llama-nemotron-super-49b",
+  "mimo-7b-rl",
+  "mimo-7b-sft",
+  "olmo3-32b-think",
+  "phi4-mini-reasoning",
+  "phi4-reasoning",
+  "phi4-reasoning-plus",
+  "qwen3-0p6b",
+  "qwen3-14b",
+  "qwen3-1p7b",
+  "qwen3-30b-a3b",
+  "qwen3-32b",
+  "qwen3-4b",
+  "qwen3-4b-thinking-2507",
+  "qwen3-8b",
+  "qwen3p5-0p8b",
+  "qwen3p5-2b",
+  "qwen3p5-4b",
+  "qwen3p5-9b",
+  "qwen3p8-27b",
+  "qwq-32b",
+  "r1-0528-qwen3-8b",
+  "r1distill-7b",
+  "r1distill-llama-70b",
+  "r1distill-llama-8b",
+  "skywork-or1-7b"
+ ],
+ "main_formatdep": [
+  "nemotron-nano-9b-v2"
+ ],
+ "main_rise": [
+  "granite-3p3-8b",
+  "llama-nemotron-nano-8b",
+  "magistral-small",
+  "openpangu-embedded-7b-model"
+ ],
+ "main_no_sig_change": [
+  "olmo3-7b-think",
+  "openpangu-embedded-7b-v1p1",
+  "qwen3p5-35b-a3b",
+  "r1distill-14b",
+  "smollm3-3b"
+ ],
+ "main_detail": {
+  "acereason-7b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "exaone-deep-7p8b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "gpt-oss-120b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": null,
+   "polarity_ok": null
+  },
+  "gpt-oss-20b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "granite-3p3-8b": {
+   "primary_drop": false,
+   "primary_rise": true,
+   "nli_drop": true,
+   "polarity_ok": false
+  },
+  "llama-nemotron-nano-8b": {
+   "primary_drop": false,
+   "primary_rise": true,
+   "nli_drop": true,
+   "polarity_ok": false
+  },
+  "llama-nemotron-super-49b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": null,
+   "polarity_ok": null
+  },
+  "magistral-small": {
+   "primary_drop": false,
+   "primary_rise": true,
+   "nli_drop": null,
+   "polarity_ok": true
+  },
+  "mimo-7b-rl": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "mimo-7b-sft": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "nemotron-nano-9b-v2": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": false,
+   "polarity_ok": null
+  },
+  "olmo3-32b-think": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": null,
+   "polarity_ok": null
+  },
+  "olmo3-7b-think": {
+   "primary_drop": false,
+   "primary_rise": false,
+   "nli_drop": null,
+   "polarity_ok": null
+  },
+  "openpangu-embedded-7b-model": {
+   "primary_drop": false,
+   "primary_rise": true,
+   "nli_drop": false,
+   "polarity_ok": null
+  },
+  "openpangu-embedded-7b-v1p1": {
+   "primary_drop": false,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "phi4-mini-reasoning": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "phi4-reasoning": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "phi4-reasoning-plus": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": null,
+   "polarity_ok": null
+  },
+  "qwen3-0p6b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": null,
+   "polarity_ok": null
+  },
+  "qwen3-14b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "qwen3-1p7b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": null,
+   "polarity_ok": null
+  },
+  "qwen3-30b-a3b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "qwen3-32b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "qwen3-4b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "qwen3-4b-thinking-2507": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": null,
+   "polarity_ok": null
+  },
+  "qwen3-8b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": true
+  },
+  "qwen3p5-0p8b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "qwen3p5-2b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "qwen3p5-35b-a3b": {
+   "primary_drop": false,
+   "primary_rise": false,
+   "nli_drop": null,
+   "polarity_ok": null
+  },
+  "qwen3p5-4b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": true
+  },
+  "qwen3p5-9b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": true
+  },
+  "qwen3p8-27b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "qwq-32b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": null,
+   "polarity_ok": null
+  },
+  "r1-0528-qwen3-8b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "r1distill-14b": {
+   "primary_drop": false,
+   "primary_rise": false,
+   "nli_drop": null,
+   "polarity_ok": null
+  },
+  "r1distill-7b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": null,
+   "polarity_ok": null
+  },
+  "r1distill-llama-70b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": null,
+   "polarity_ok": null
+  },
+  "r1distill-llama-8b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "skywork-or1-7b": {
+   "primary_drop": true,
+   "primary_rise": false,
+   "nli_drop": true,
+   "polarity_ok": null
+  },
+  "smollm3-3b": {
+   "primary_drop": false,
+   "primary_rise": false,
+   "nli_drop": false,
+   "polarity_ok": null
+  }
+ }
+}

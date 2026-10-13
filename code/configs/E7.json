@@ -1,0 +1,42 @@
+{
+  "name": "E7",
+  "description": "E7 trace-truncation probe: the letter probabilities (L) after plain truncation of the SAME thinking trace at k=0,32,...,2048 tokens and at natural end, on the scalar items (A3 by trigger, A2). Marker onset is analysed from traces.jsonl.",
+  "item_seed": 1234,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "cap": 8192,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "variant": "default",
+  "conditions": [
+    "think_b0_plain",
+    "think_b32_plain",
+    "think_b64_plain",
+    "think_b128_plain",
+    "think_b256_plain",
+    "think_b512_plain",
+    "think_b1024_plain",
+    "think_b2048_plain",
+    "think_full"
+  ],
+  "sets": [
+    {
+      "file": "a2_scalar_diversity",
+      "bucket": "a2"
+    },
+    {
+      "file": "imppres_scalar_target",
+      "bucket": "a3_fel",
+      "variant": "felicity",
+      "stratify": [
+        "subset",
+        "meta.spec_relation"
+      ],
+      "per_cell": 10
+    }
+  ]
+}

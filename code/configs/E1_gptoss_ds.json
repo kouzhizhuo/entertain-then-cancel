@@ -1,0 +1,136 @@
+{
+ "name": "E1_gptoss_ds",
+ "description": "gpt-oss-20b efforts low/medium/high on Circa, implicatures1k, NOPE, the machine-translated slice and the yes-bias probes.",
+ "item_seed": 1234,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [
+  "off",
+  "think_b0_plain",
+  "think_b512",
+  "think_b2048",
+  "think_full"
+ ],
+ "sets": [
+  {
+   "file": "circa",
+   "bucket": "c_circa",
+   "where": {
+    "split": [
+     "test"
+    ]
+   }
+  },
+  {
+   "file": "implicatures1k",
+   "bucket": "c_impl",
+   "where": {
+    "split": [
+     "test"
+    ]
+   }
+  },
+  {
+   "file": "nope",
+   "bucket": "c_nope",
+   "where": {
+    "split": [
+     "test"
+    ]
+   }
+  },
+  {
+   "file": "imppres_xl",
+   "bucket": "l_en",
+   "where": {
+    "meta.lang": [
+     "en"
+    ]
+   }
+  },
+  {
+   "file": "imppres_xl",
+   "bucket": "l_de",
+   "where": {
+    "meta.lang": [
+     "de"
+    ]
+   }
+  },
+  {
+   "file": "imppres_xl",
+   "bucket": "l_zh",
+   "where": {
+    "meta.lang": [
+     "zh"
+    ]
+   }
+  },
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "p_a3q",
+   "variant": "felicity",
+   "where": {
+    "split": [
+     "test"
+    ],
+    "subset": [
+     "quantifiers"
+    ]
+   },
+   "n": 80,
+   "prior": true
+  },
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "p_a3c",
+   "variant": "felicity",
+   "where": {
+    "split": [
+     "test"
+    ],
+    "subset": [
+     "connectives"
+    ]
+   },
+   "n": 80,
+   "prior": true
+  },
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "x_a3q",
+   "variant": "felicityflip",
+   "where": {
+    "split": [
+     "test"
+    ],
+    "subset": [
+     "quantifiers"
+    ]
+   },
+   "n": 80
+  },
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "x_a3c",
+   "variant": "felicityflip",
+   "where": {
+    "split": [
+     "test"
+    ],
+    "subset": [
+     "connectives"
+    ]
+   },
+   "n": 80
+  }
+ ]
+}

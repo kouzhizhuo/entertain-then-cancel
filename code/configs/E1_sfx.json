@@ -1,0 +1,48 @@
+{
+ "name": "E1_sfx",
+ "description": "Full IMPPRES logical-operator sets (1,800 items x 2 framings) with a same-weights switch: off, NT-forced, plain caps, natural.",
+ "item_seed": 1234,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [
+  "off",
+  "think_b0_plain",
+  "think_b512_plain",
+  "think_b2048_plain",
+  "think_full"
+ ],
+ "sets": [
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "a3f_fel",
+   "variant": "felicity",
+   "where": {
+    "subset": [
+     "quantifiers",
+     "connectives",
+     "modals"
+    ]
+   }
+  },
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "a3f_nli",
+   "variant": "default",
+   "where": {
+    "subset": [
+     "quantifiers",
+     "connectives",
+     "modals"
+    ]
+   }
+  }
+ ]
+}

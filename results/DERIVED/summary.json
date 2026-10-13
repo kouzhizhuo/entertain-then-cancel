@@ -1,0 +1,66 @@
+{
+ "fullsets": {
+  "nli": {
+   "tested": 24,
+   "drop": 21,
+   "rise": 2
+  }
+ },
+ "main": {
+  "tested": 40,
+  "counted": 30,
+  "formatdep": 1,
+  "rise": 4,
+  "no_sig_change": 5
+ },
+ "glmm": {
+  "qwen3-4b": {
+   "coef": -0.067,
+   "lo": -0.094,
+   "hi": -0.041,
+   "p": "<.001",
+   "coef__digits": 3,
+   "lo__digits": 3,
+   "hi__digits": 3
+  },
+  "qwen3-8b": {
+   "coef": -0.063,
+   "lo": -0.087,
+   "hi": -0.039,
+   "p": "<.001",
+   "coef__digits": 3,
+   "lo__digits": 3,
+   "hi__digits": 3
+  },
+  "qwen3-14b": {
+   "coef": -0.049,
+   "lo": -0.076,
+   "hi": -0.022,
+   "p": "<.001",
+   "coef__digits": 3,
+   "lo__digits": 3,
+   "hi__digits": 3
+  },
+  "qwen3-32b": {
+   "coef": -0.037,
+   "lo": -0.096,
+   "hi": 0.023,
+   "p": ".230",
+   "coef__digits": 3,
+   "lo__digits": 3,
+   "hi__digits": 3
+  }
+ },
+ "holm": {
+  "full": {
+   "tests": 48,
+   "survive": 47
+  }
+ },
+ "tost": {
+  "a2": {
+   "equivalent": 2,
+   "tested": 42
+  }
+ }
+}

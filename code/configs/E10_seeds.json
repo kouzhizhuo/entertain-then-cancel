@@ -1,0 +1,56 @@
+{
+ "name": "E10_seeds",
+ "description": "Token-matched IST seeds (26/26/26 Qwen tokens): intent vs neutral vs logic seed against off and unseeded natural thinking, E8 sets, 3 seeds (expansion item 5: turns the IST demonstration into a controlled test).",
+ "item_seed": 1234,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [
+  "off",
+  "think_full",
+  "seed_intent",
+  "seed_neutral",
+  "seed_logic"
+ ],
+ "sets": [
+  {
+   "file": "bn_underinformative",
+   "bucket": "a1_fel",
+   "variant": "felicity"
+  },
+  {
+   "file": "a2_scalar_diversity",
+   "bucket": "a2"
+  },
+  {
+   "file": "imppres_scalar_target",
+   "bucket": "a3_fel",
+   "variant": "felicity",
+   "stratify": [
+    "subset",
+    "meta.spec_relation"
+   ],
+   "per_cell": 10
+  },
+  {
+   "file": "hu2022_indirect_speech",
+   "bucket": "b1_indirect_speech"
+  },
+  {
+   "file": "hu2022_irony",
+   "bucket": "b1_irony"
+  },
+  {
+   "file": "ruis2022_test",
+   "bucket": "b2_ludwig",
+   "n": 200
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "name": "E1_xl",
+ "description": "Non-English slice (machine-translated German / Chinese IMPPRES quantifier+connective pairs, 160 each, + the English originals as a same-items control), felicity framing, off / NT-forced / CAP-512 / CAP-2048 / natural.",
+ "item_seed": 1234,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "cap": 8192,
+ "temperature": 0.6,
+ "top_p": 0.95,
+ "top_k": 20,
+ "variant": "default",
+ "conditions": [
+  "off",
+  "think_b0_plain",
+  "think_b512",
+  "think_b2048",
+  "think_full"
+ ],
+ "sets": [
+  {
+   "file": "imppres_xl",
+   "bucket": "l_en",
+   "where": {
+    "meta.lang": [
+     "en"
+    ]
+   }
+  },
+  {
+   "file": "imppres_xl",
+   "bucket": "l_de",
+   "where": {
+    "meta.lang": [
+     "de"
+    ]
+   }
+  },
+  {
+   "file": "imppres_xl",
+   "bucket": "l_zh",
+   "where": {
+    "meta.lang": [
+     "zh"
+    ]
+   }
+  }
+ ]
+}

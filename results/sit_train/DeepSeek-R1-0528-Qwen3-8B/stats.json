@@ -1,0 +1,91 @@
+{
+ "model": "DeepSeek-R1-0528-Qwen3-8B",
+ "quota_N_per_family": 1404,
+ "cap": 1500,
+ "families": {
+  "speaker": {
+   "items": 2300,
+   "mixed": 547,
+   "all4": 1187,
+   "zero": 566,
+   "pass_k_histogram": {
+    "2/4": 161,
+    "3/4": 206,
+    "4/4": 1187,
+    "0/4": 566,
+    "1/4": 180
+   },
+   "selected": 1404,
+   "selected_share_4of4": 0.6103988603988604,
+   "selected_sets": {
+    "circa": 381,
+    "imppres_fel": 237,
+    "impl1k": 359,
+    "pub_task4": 223,
+    "pub_task5": 204
+   }
+  },
+  "literal": {
+   "items": 1779,
+   "mixed": 205,
+   "all4": 1379,
+   "zero": 195,
+   "pass_k_histogram": {
+    "4/4": 1379,
+    "3/4": 101,
+    "0/4": 195,
+    "2/4": 45,
+    "1/4": 59
+   },
+   "selected": 1404,
+   "selected_share_4of4": 0.853988603988604,
+   "selected_sets": {
+    "imppres_truth": 447,
+    "gsm8k": 590,
+    "folio": 367
+   }
+  },
+  "presup": {
+   "items": 1880,
+   "mixed": 495,
+   "all4": 909,
+   "zero": 476,
+   "pass_k_histogram": {
+    "3/4": 188,
+    "0/4": 476,
+    "4/4": 909,
+    "1/4": 153,
+    "2/4": 154
+   },
+   "selected": 1404,
+   "selected_share_4of4": 0.6474358974358975,
+   "selected_sets": {
+    "pub_task11": 518,
+    "pub_task12": 496,
+    "imppres_presup": 390
+   }
+  }
+ },
+ "selected": {
+  "n": 4212,
+  "mean_think_tokens": 1683.2647198480531,
+  "share_correct": 1.0,
+  "total_tokens": 7089911,
+  "by_family_mean_tokens": {
+   "speaker": 1593.818376068376,
+   "literal": 1940.6182336182337,
+   "presup": 1515.3575498575499
+  }
+ },
+ "control": {
+  "n": 4212,
+  "mean_think_tokens": 1670.5712250712252,
+  "share_correct": 0.8637226970560304,
+  "total_tokens": 7036446,
+  "by_family_mean_tokens": {
+   "speaker": 1586.3447293447293,
+   "literal": 1939.5890313390314,
+   "presup": 1485.7799145299145
+  }
+ }
+}

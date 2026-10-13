@@ -1,0 +1,218 @@
+{
+ "split": "test",
+ "routed": {
+  "q3": {
+   "routed": {
+    "imppres_quant_fel": 89,
+    "imppres_quant_truth": 0,
+    "imppres_conn_fel": 79,
+    "imppres_conn_truth": 0,
+    "ludwig": 0,
+    "circa": 0,
+    "pub_task2": 0,
+    "pub_task3": 0,
+    "pub_task6": 0,
+    "figqa": 0,
+    "ix_rec": 0,
+    "ix_can": 0,
+    "nope": 0,
+    "imppres_presup": 0,
+    "folio": 0
+   },
+   "gsm_taskaware_available": true
+  },
+  "r1": {
+   "routed": {
+    "imppres_quant_fel": 89,
+    "imppres_quant_truth": 0,
+    "imppres_conn_fel": 79,
+    "imppres_conn_truth": 0,
+    "ludwig": 0,
+    "circa": 0,
+    "pub_task2": 0,
+    "pub_task3": 0,
+    "pub_task6": 0,
+    "figqa": 0,
+    "ix_rec": 0,
+    "ix_can": 0,
+    "nope": 0,
+    "imppres_presup": 0,
+    "folio": 0
+   },
+   "gsm_taskaware_available": true
+  }
+ },
+ "arms": {
+  "x1": {
+   "score_diff": 1.3998163452708905,
+   "ci": [
+    1.1650137741046833,
+    1.6457300275482094
+   ],
+   "ci_lo": 1.1650137741046833,
+   "ci_hi": 1.6457300275482094,
+   "gates": {
+    "ix_can": {
+     "diff": 0.0,
+     "lb": 0.0
+    },
+    "imppres_truth": {
+     "diff": 0.0,
+     "lb": 0.0
+    },
+    "folio": {
+     "diff": 0.0,
+     "lb": 0.0
+    },
+    "gsm8k": {
+     "diff": 0.0,
+     "lb": 0.0
+    }
+   },
+   "passes_test_rule": true,
+   "per_model": {
+    "q3": {
+     "speaker": 62.457032060860264,
+     "presup": 65.6783625730994,
+     "literal": 87.8968234969489
+    },
+    "r1": {
+     "speaker": 56.80119077934204,
+     "presup": 62.868421052631575,
+     "literal": 86.30687553245548
+    }
+   }
+  },
+  "x2": {
+   "score_diff": 0.9684113865932048,
+   "ci": [
+    0.7561983471074382,
+    1.1828282828282828
+   ],
+   "ci_lo": 0.7561983471074382,
+   "ci_hi": 1.1828282828282828,
+   "gates": {
+    "ix_can": {
+     "diff": 0.0,
+     "lb": 0.0
+    },
+    "imppres_truth": {
+     "diff": 0.0,
+     "lb": 0.0
+    },
+    "folio": {
+     "diff": 0.0,
+     "lb": 0.0
+    },
+    "gsm8k": {
+     "diff": 0.0,
+     "lb": 0.0
+    }
+   },
+   "passes_test_rule": true,
+   "per_model": {
+    "q3": {
+     "speaker": 61.55198155580976,
+     "presup": 65.6783625730994,
+     "literal": 87.8968234969489
+    },
+    "r1": {
+     "speaker": 55.980621449681806,
+     "presup": 62.868421052631575,
+     "literal": 86.30687553245548
+    }
+   }
+  },
+  "taskaware": {
+   "score_diff": 2.289214338589297,
+   "ci": [
+    1.3708658804433502,
+    3.2139261795674856
+   ],
+   "ci_lo": 1.3708658804433502,
+   "ci_hi": 3.2139261795674856,
+   "gates": {
+    "ix_can": {
+     "diff": 1.1111111111111112,
+     "lb": -1.8518518518518519
+    },
+    "imppres_truth": {
+     "diff": 5.3861788617886175,
+     "lb": 4.166666666666667
+    },
+    "folio": {
+     "diff": 0.49261083743842365,
+     "lb": -1.7241379310344827
+    },
+    "gsm8k": {
+     "diff": -0.3,
+     "lb": -1.3
+    }
+   },
+   "passes_test_rule": true,
+   "per_model": {
+    "q3": {
+     "speaker": 60.20738030137063,
+     "presup": 66.84795321637426,
+     "literal": 91.95947907195556
+    },
+    "r1": {
+     "speaker": 57.84694573268548,
+     "presup": 62.24269005847953,
+     "literal": 87.00570873686861
+    }
+   }
+  }
+ },
+ "nat_per_model": {
+  "q3": {
+   "speaker": 58.17163261182444,
+   "presup": 65.6783625730994,
+   "literal": 87.8968234969489
+  },
+  "r1": {
+   "speaker": 55.48732484729429,
+   "presup": 62.868421052631575,
+   "literal": 86.30687553245548
+  }
+ },
+ "felicity_per_model": {
+  "q3": {
+   "nat": {
+    "imppres_quant_fel": 2.0,
+    "imppres_conn_fel": 0.4132231404958678
+   },
+   "x1": {
+    "imppres_quant_fel": 22.8,
+    "imppres_conn_fel": 18.181818181818183
+   },
+   "x2": {
+    "imppres_quant_fel": 19.2,
+    "imppres_conn_fel": 13.636363636363635
+   },
+   "taskaware": {
+    "imppres_quant_fel": 3.5999999999999996,
+    "imppres_conn_fel": 3.3057851239669422
+   }
+  },
+  "r1": {
+   "nat": {
+    "imppres_quant_fel": 2.4,
+    "imppres_conn_fel": 2.066115702479339
+   },
+   "x1": {
+    "imppres_quant_fel": 7.199999999999999,
+    "imppres_conn_fel": 9.090909090909092
+   },
+   "x2": {
+    "imppres_quant_fel": 5.6000000000000005,
+    "imppres_conn_fel": 3.3057851239669422
+   },
+   "taskaware": {
+    "imppres_quant_fel": 3.2,
+    "imppres_conn_fel": 2.066115702479339
+   }
+  }
+ },
+ "minlb": 0.0
+}
