@@ -1,4 +1,4 @@
-# Thinking Reads Logical Words as Logic: Reasoning Models Entertain, Then Cancel, the Implicatures of *Some* and *Or*
+# Entertain, then Cancel: How Thinking Makes Reasoning Models Read  *Some* and *Or* Literally
 
 Code, prompts and result files for an anonymous ACL Rolling Review submission.
 
